@@ -1,10 +1,10 @@
 {
-  "name": "jordanmajd.metalsmith",
+  "name": "jordanmajd.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "A metalsmith site to share my thoughts and projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "metalsmith"
   },
   "author": "Jordan Majd <jordan@madtitanstudios.com>",
   "license": "MIT",
