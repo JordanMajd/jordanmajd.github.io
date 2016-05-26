@@ -1,0 +1,19 @@
+{
+  "source": "./posts",
+  "destination": "./site",
+  "metadata": {
+    "title": "Jordan Majd",
+    "description": "A site for my thoughts and projects"
+  },
+  "plugins": {
+    "metalsmith-drafts": {},
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-layouts": {
+      "engine": "swig",
+      "directory": "layouts"
+    }
+  }
+}
