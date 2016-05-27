@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
   {% for project in collections.projects %}
-    <a href="{{ project.date }}/{{ project.title }}">{{project.title}}</a>
+    <a href="{{ project.date | date('Y/m/d') }}/{{ project.title | replace(' ', '-', 'g') }}">{{project.title}}</a>
   {% endfor %}
 {% endblock %}

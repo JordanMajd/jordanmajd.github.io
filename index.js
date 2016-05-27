@@ -1,10 +1,14 @@
 'use strict';
 
+require('dotenv').config();
+
 const Metalsmith = require('metalsmith');
 const markdown = require('metalsmith-markdown');
 const sass = require('metalsmith-sass');
 const layout = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
+const watch = require('metalsmith-watch');
+const env = require('metalsmith-env');
 // const drafts = require('metalsmith-drafts');
 const permalinks = require('metalsmith-permalinks');
 
@@ -28,6 +32,7 @@ paths.build = 'www/';
 
 Metalsmith(__dirname)
   .source(paths.src)
+  .use(env())
   .use(collections({
     pages:{
       pattern: paths.pages + '*.md',
@@ -75,6 +80,17 @@ Metalsmith(__dirname)
     partials: paths.partials
   }))
   .destination(paths.build)
+  .use(function(){
+    if(process.env.NODE_ENV !== 'production'){
+      return watch({
+        paths: {
+          'src/**/*': true,
+          'layouts/**/*': true
+        },
+        livereload: true
+      });
+    }
+  })
   .build(function(err){
 
     if(err){

@@ -1,7 +1,7 @@
 ---
 layout: home.html
 ---
-My home page
+Jordanmajd.com
 
 - [about](/content/about/)
 - [posts](/posts/)
