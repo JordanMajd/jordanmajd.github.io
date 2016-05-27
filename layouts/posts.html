@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+  {% for post in collections.posts %}
+    <a href="{{ post.date | date('Y/m/d') }}/{{ post.title | replace(' ', '-', 'g') }}">{{post.title}}</a>
+  {% endfor %}
+{% endblock %}

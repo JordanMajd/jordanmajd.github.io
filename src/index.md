@@ -3,6 +3,6 @@ layout: home.html
 ---
 My home page
 
-- [about](/content/about)
-- [posts](/posts)
-- [projects](/projects)
+- [about](/content/about/)
+- [posts](/posts/)
+- [projects](/projects/)

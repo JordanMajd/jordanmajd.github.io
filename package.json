@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
-    "start": "http-server ./www"
+    "start": "http-server -c-1 ./www"
   },
   "author": "Jordan Majd <jordan@madtitanstudios.com>",
   "license": "MIT",

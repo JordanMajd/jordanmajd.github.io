@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+  {% for project in collections.projects %}
+    <a href="{{ project.date }}/{{ project.title }}">{{project.title}}</a>
+  {% endfor %}
+{% endblock %}
