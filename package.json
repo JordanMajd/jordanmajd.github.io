@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "metalsmith": "^2.1.0",
+    "metalsmith-branch": "0.0.4",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-drafts": "0.0.1",
     "metalsmith-env": "^2.0.0",

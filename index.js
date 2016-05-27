@@ -8,6 +8,7 @@ const collections = require('metalsmith-collections');
 const watch = require('metalsmith-watch');
 const serve = require('metalsmith-serve');
 const env = require('metalsmith-env');
+const branch = require('metalsmith-branch');
 // const drafts = require('metalsmith-drafts');
 const permalinks = require('metalsmith-permalinks');
 
@@ -35,6 +36,9 @@ metalsmith.source(paths.src);
 metalsmith.use(env());
 
 metalsmith.use(collections({
+  layouts: {
+    pattern: paths.layouts + '**/*.html'
+  },
   pages: {
     pattern: paths.pages + '*.md',
   },
@@ -51,8 +55,12 @@ metalsmith.use(collections({
 metalsmith.use(markdown());
 
 metalsmith.use(permalinks({
-  // pattern: ':title',
   linksets: [{
+    match: {
+      collection: 'layouts'
+    },
+    permalink: false
+  }, {
     match: {
       collection: 'pages'
     },
@@ -61,14 +69,12 @@ metalsmith.use(permalinks({
     match: {
       collection: 'posts'
     },
-    pattern: ':collection/:date/:title',
-    // date: 'mmddyy'
+    pattern: ':collection/:date/:title'
   }, {
     match: {
       collection: 'projects'
     },
-    pattern: ':collection/:date/:title',
-    // date: 'mmddyy'
+    pattern: ':collection/:date/:title'
   }]
 }));
 
@@ -94,8 +100,8 @@ if (process.env.NODE_ENV !== 'production') {
   metalsmith.use(watch({
     paths: {
       'src/**/*': true,
-      'layouts/**/*': true,
-      'index.js': true
+      'layouts/**/*': '**/*',
+      'index.js': '**/*'
     },
     livereload: true
   }));
