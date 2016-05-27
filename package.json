@@ -10,7 +10,9 @@
   "author": "Jordan Majd <jordan@madtitanstudios.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
     "metalsmith": "^2.1.0",
+    "metalsmith-babel": "^4.0.0",
     "metalsmith-branch": "0.0.4",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-drafts": "0.0.1",

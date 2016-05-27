@@ -8,9 +8,12 @@ const collections = require('metalsmith-collections');
 const watch = require('metalsmith-watch');
 const serve = require('metalsmith-serve');
 const env = require('metalsmith-env');
-const branch = require('metalsmith-branch');
-// const drafts = require('metalsmith-drafts');
 const permalinks = require('metalsmith-permalinks');
+const babel = require('metalsmith-babel');
+
+// const branch = require('metalsmith-branch');
+// const drafts = require('metalsmith-drafts');
+
 
 let paths = {};
 paths.src = 'src/';
@@ -78,12 +81,16 @@ metalsmith.use(permalinks({
   }]
 }));
 
+metalsmith.use(babel({
+  presets: ['es2015']
+}));
+
 metalsmith.use(sass({
   //change sass directory name to css
   outputDir: function(originalPath) {
     return originalPath.replace('sass', 'css');
   },
-  outputStyle: 'compressed'
+  outputStyle: process.env.NODE_ENV !== 'production' ? 'expanded' : 'compressed'
 }));
 
 metalsmith.use(layout({
@@ -110,6 +117,8 @@ if (process.env.NODE_ENV !== 'production') {
     port: 8080,
     verbose: true
   }));
+} else {
+
 }
 
 metalsmith.build(function(err) {
