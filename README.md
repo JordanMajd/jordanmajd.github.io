@@ -10,19 +10,17 @@ To install:
 npm install
 ```
 
-To build for development:
+To build and run development server:
 
 ```bash
-npm run build
+npm start
 ```
 
 To build for production:
 
 ```bash
-NODE_ENV=production npm run build
+npm run build
 ```
-
-Alternatively you could copy `.env.example` to `.env`. You could use `.env` to set your `NODE_ENV`.
 
 ## License
 

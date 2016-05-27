@@ -5,8 +5,5 @@
   {% include "partials/nav.html" %}
   {% block content %}{% endblock %}
   {% include "partials/scripts.html" %}
-  {% if NODE_ENV!=="production" %}
-    <script src="http://localhost:35729/livereload.js"></script>
-  {% endif %}
 </body>
 </html>

@@ -3,6 +3,6 @@ layout: home.html
 ---
 Jordanmajd.com
 
-- [about](/content/about/)
+- [about](/about/)
 - [posts](/posts/)
 - [projects](/projects/)
