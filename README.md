@@ -22,6 +22,8 @@ To build for production:
 npm run build
 ```
 
+To configure global variables, modify [src/config.json](/src/config.json).
+
 ## License
 
 This project is licensed under MIT, for further details see [LICENSE](/LICENSE).

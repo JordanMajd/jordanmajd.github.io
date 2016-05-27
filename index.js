@@ -2,15 +2,28 @@
 
 const Metalsmith = require('metalsmith');
 const markdown = require('metalsmith-markdown');
+const babel = require('metalsmith-babel');
 const sass = require('metalsmith-sass');
 const layout = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
+const permalinks = require('metalsmith-permalinks');
+const metadata = require('metalsmith-metadata');
+const env = require('metalsmith-env');
+
+// development imports
 const watch = require('metalsmith-watch');
 const serve = require('metalsmith-serve');
-const env = require('metalsmith-env');
-const permalinks = require('metalsmith-permalinks');
-const babel = require('metalsmith-babel');
 
+// production imports
+const siteMap = require('metalsmith-mapsite');
+const uglify = require('metalsmith-uglify');
+const htmlMinifier = require('metalsmith-html-minifier');
+
+//TODO
+// const wordcount = require("metalsmith-word-count");
+// const uncss = require('metalsmith-uncss');
+// const eslint = require('metalsmith-eslint');
+// const pagination = require('metalsmith-pagination');
 // const branch = require('metalsmith-branch');
 // const drafts = require('metalsmith-drafts');
 
@@ -36,12 +49,13 @@ let metalsmith = Metalsmith(__dirname);
 
 metalsmith.source(paths.src);
 
+metalsmith.use(metadata({
+  config: 'config.json'
+}));
+
 metalsmith.use(env());
 
 metalsmith.use(collections({
-  layouts: {
-    pattern: paths.layouts + '**/*.html'
-  },
   pages: {
     pattern: paths.pages + '*.md',
   },
@@ -119,6 +133,12 @@ if (process.env.NODE_ENV !== 'production') {
   }));
 } else {
 
+  metalsmith.use(uglify());
+  metalsmith.use(htmlMinifier());
+
+  metalsmith.use(siteMap({
+    hostname: 'http://jordanmajd.com'
+  }));
 }
 
 metalsmith.build(function(err) {
@@ -126,6 +146,7 @@ metalsmith.build(function(err) {
   if (err) {
     throw err;
   }
+  console.log(metalsmith.metadata());
 
   console.log('build finished!');
 });
