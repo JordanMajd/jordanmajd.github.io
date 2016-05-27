@@ -1,8 +1,16 @@
 {
+  "site":{
+    "hostname":"https://jordanmajd.com",
+    "disqus": "",
+    "ga":"",
+    "keywords": [],
+    "description":""
+  },
   "author": {
     "name": "Jordan Majd",
     "email": "jordan@madtitanstudios.com",
     "github": "https://github.com/jordanmajd",
-    "twitter": "https://twitter.com/jordanmajd"
+    "twitter": "https://twitter.com/jordanmajd",
+    "about":""
   }
 }

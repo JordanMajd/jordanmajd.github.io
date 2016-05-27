@@ -100,7 +100,6 @@ metalsmith.use(babel({
 }));
 
 metalsmith.use(sass({
-  //change sass directory name to css
   outputDir: function(originalPath) {
     return originalPath.replace('sass', 'css');
   },
@@ -131,6 +130,7 @@ if (process.env.NODE_ENV !== 'production') {
     port: 8080,
     verbose: true
   }));
+
 } else {
 
   metalsmith.use(uglify());
@@ -146,7 +146,6 @@ metalsmith.build(function(err) {
   if (err) {
     throw err;
   }
-  console.log(metalsmith.metadata());
 
   console.log('build finished!');
 });

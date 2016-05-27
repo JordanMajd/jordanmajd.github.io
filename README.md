@@ -31,6 +31,8 @@ To configure global variables, modify [src/config.json](/src/config.json).
 - .scsslint
 - mathjax
 - gists
+- deploy
+- bower
 - code styling / execution
 - implement unused deps in index.js
 
