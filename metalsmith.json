@@ -1,9 +1,11 @@
 {
-  "source": "./posts",
-  "destination": "./site",
+  "source": "./content",
+  "destination": "./www",
   "metadata": {
     "title": "Jordan Majd",
-    "description": "A site for my thoughts and projects"
+    "description": "A site for my thoughts and projects",
+    "github":"https://github.com/jordanmajd",
+    "twitter":"https://twitter.com/jordanmajd"
   },
   "plugins": {
     "metalsmith-drafts": {},
@@ -13,7 +15,7 @@
     },
     "metalsmith-layouts": {
       "engine": "swig",
-      "directory": "layouts"
+      "directory": "templates"
     }
   }
 }

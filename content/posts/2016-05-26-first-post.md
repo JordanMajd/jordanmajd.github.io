@@ -1,7 +1,7 @@
 ---
 title: First Post
 date: 2016-05-26
-layout: index.html
+layout: post.html
 ---
 
 First metalsmith post
