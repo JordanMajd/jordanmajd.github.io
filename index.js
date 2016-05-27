@@ -9,6 +9,8 @@ const collections = require('metalsmith-collections');
 const permalinks = require('metalsmith-permalinks');
 const metadata = require('metalsmith-metadata');
 const env = require('metalsmith-env');
+const ignore = require('metalsmith-ignore');
+
 
 // development imports
 const watch = require('metalsmith-watch');
@@ -24,9 +26,11 @@ const htmlMinifier = require('metalsmith-html-minifier');
 // const uncss = require('metalsmith-uncss');
 // const eslint = require('metalsmith-eslint');
 // const pagination = require('metalsmith-pagination');
+// const concat = require('metalsmith-concat');
+// const drafts = require('metalsmith-drafts'); could use ignore instead
 // const branch = require('metalsmith-branch');
-// const drafts = require('metalsmith-drafts');
-
+// https://www.npmjs.com/package/metalsmith-imagemin
+// atom xml feed
 
 let paths = {};
 paths.src = 'src/';
@@ -49,6 +53,9 @@ let metalsmith = Metalsmith(__dirname);
 
 metalsmith.source(paths.src);
 
+// ignore sass files that aren't main
+metalsmith.use(ignore(['sass/!(main).scss']));
+
 metalsmith.use(metadata({
   config: 'config.json'
 }));
@@ -60,7 +67,7 @@ metalsmith.use(collections({
     pattern: paths.pages + '*.md',
   },
   posts: {
-    pattern: paths.posts + '*.md',
+    pattern: paths.posts + '/*.md',
     sortBy: 'date'
   },
   projects: {
@@ -99,20 +106,20 @@ metalsmith.use(babel({
   presets: ['es2015']
 }));
 
+
 metalsmith.use(sass({
-  outputDir: function(originalPath) {
-    return originalPath.replace('sass', 'css');
-  },
+  sourceMap: process.env.NODE_ENV !== 'production',
+  sourceMapContents: process.env.NODE_ENV !== 'production',
+  outputDir: 'css/',
   outputStyle: process.env.NODE_ENV !== 'production' ? 'expanded' : 'compressed'
 }));
+
 
 metalsmith.use(layout({
   engine: 'swig',
   directory: paths.layouts,
   partials: paths.partials
 }));
-
-metalsmith.destination(paths.build);
 
 
 if (process.env.NODE_ENV !== 'production') {
@@ -140,6 +147,8 @@ if (process.env.NODE_ENV !== 'production') {
     hostname: 'http://jordanmajd.com'
   }));
 }
+
+metalsmith.destination(paths.build);
 
 metalsmith.build(function(err) {
 
