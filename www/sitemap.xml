@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>http://jordanmajd.com/index.html</loc> </url>
-<url> <loc>http://jordanmajd.com/about/index.html</loc> </url>
-<url> <loc>http://jordanmajd.com/posts/index.html</loc> </url>
-<url> <loc>http://jordanmajd.com/projects/index.html</loc> </url>
-<url> <loc>http://jordanmajd.com/projects/2016/05/26/first-project/index.html</loc> </url>
-<url> <loc>http://jordanmajd.com/posts/2016/05/26/first-post/index.html</loc> </url>
-</urlset>

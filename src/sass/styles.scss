@@ -1,0 +1,24 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  color: $text-primary;
+  font-family: $font-pirmary;
+  font-size: $text-default;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  padding-top: $header-size;
+  width: 100%;
+}
+
+@import './nav';

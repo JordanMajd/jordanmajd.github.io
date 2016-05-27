@@ -54,7 +54,7 @@ let metalsmith = Metalsmith(__dirname);
 metalsmith.source(paths.src);
 
 // ignore sass files that aren't main
-metalsmith.use(ignore(['sass/!(main).scss']));
+metalsmith.use(ignore(['sass/!(styles).scss']));
 
 metalsmith.use(metadata({
   config: 'config.json'
@@ -126,7 +126,7 @@ if (process.env.NODE_ENV !== 'production') {
 
   metalsmith.use(watch({
     paths: {
-      'src/**/*': true,
+      'src/**/*': '**/*',
       'layouts/**/*': '**/*',
       'index.js': '**/*'
     },

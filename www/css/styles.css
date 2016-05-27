@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  padding-top: 50px;
+  width: 100%;
+}
+
+nav {
+  background-color: #2196F3;
+  height: 50px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  height: 100%;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li :hover {
+  background-color: #1976D2;
+}
+
+nav a {
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

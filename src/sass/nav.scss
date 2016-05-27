@@ -1,0 +1,26 @@
+nav {
+  background-color: $primary;
+  height: $header-size;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    height: 100%;
+  }
+
+  li {
+    display: inline-block;
+
+    :hover {
+      background-color: $primary-dark;
+    }
+  }
+
+  a {
+    color: $white;
+    font-size: $text-header;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"variables.scss",
+		"nav.scss"
+	],
+	"sourcesContent": [
+		"@import './variables';\n\n* {\n  box-sizing: border-box;\n}\n\nbody,\nhtml {\n  color: $text-primary;\n  font-family: $font-pirmary;\n  font-size: $text-default;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n}\n\n.container {\n  height: 100%;\n  padding-top: $header-size;\n  width: 100%;\n}\n\n@import './nav';\n",
+		"$header-size: 50px;\n\n$font-pirmary:  'Roboto', sans-serif;\n$font-secondary: 'Montserrat', sans-serif;\n\n$text-default: 18px;\n$text-header: 1.75rem;\n$text-subheader: 1.25rem;\n$text-content: 1rem;\n\n$white: #FFFFFF;\n$text-primary: #212121;\n$text-secondary: #727272;\n$primary-dark: #1976D2;\n$primary: #2196F3;\n$primary-light: #BBDEFB;\n$secondary: #FF5722;\n$divider: #B6B6B6;\n",
+		"nav {\n  background-color: $primary;\n  height: $header-size;\n  margin: 0;\n  position: fixed;\n  top: 0;\n  width: 100%;\n\n  ul {\n    height: 100%;\n  }\n\n  li {\n    display: inline-block;\n\n    :hover {\n      background-color: $primary-dark;\n    }\n  }\n\n  a {\n    color: $white;\n    font-size: $text-header;\n    text-decoration: none;\n  }\n}\n"
+	],
+	"mappings": "AAEA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAW;CACxB;;AAED,AAAA,IAAI;AACJ,AAAA,IAAI,CAAC;EACH,KAAK,ECGQ,OAAO;EDFpB,WAAW,ECPG,QAAQ,EAAE,UAAU;EDQlC,SAAS,ECLI,IAAI;EDMjB,MAAM,EAAE,IAAK;EACb,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,KAAK,EAAE,IAAK;CACb;;AAED,AAAA,UAAU,CAAC;EACT,MAAM,EAAE,IAAK;EACb,WAAW,ECnBC,IAAI;EDoBhB,KAAK,EAAE,IAAK;CACb;;AErBD,AAAA,GAAG,CAAC;EACF,gBAAgB,EDaR,OAAO;ECZf,MAAM,EDFM,IAAI;ECGhB,MAAM,EAAE,CAAE;EACV,QAAQ,EAAE,KAAM;EAChB,GAAG,EAAE,CAAE;EACP,KAAK,EAAE,IAAK;CAmBb;;AAzBD,AAQE,GARC,CAQD,EAAE,CAAC;EACD,MAAM,EAAE,IAAK;CACd;;AAVH,AAYE,GAZC,CAYD,EAAE,CAAC;EACD,OAAO,EAAE,YAAa;CAKvB;;AAlBH,AAeI,GAfD,CAYD,EAAE,CAGA,MAAM,CAAC;EACL,gBAAgB,EDHP,OAAO;CCIjB;;AAjBL,AAoBE,GApBC,CAoBD,CAAC,CAAC;EACA,KAAK,EDXD,OAAO;ECYX,SAAS,EDhBC,OAAO;ECiBjB,eAAe,EAAE,IAAK;CACvB",
+	"names": []
+}
