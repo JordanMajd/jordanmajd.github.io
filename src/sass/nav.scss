@@ -1,26 +1,88 @@
 nav {
   background-color: $primary;
   height: $header-size;
-  margin: 0;
+  padding-left: .2rem;
+  padding-right: .2rem;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
+
+  button {
+    background-color: $primary;
+    border: 0;
+    display: block;
+    float: left;
+    height: 100%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    &:hover {
+      background-color: $primary-light;
+    }
+
+    span {
+      background-color: $white;
+      border-radius: 25%;
+      display: block;
+      height: .2rem;
+      margin-bottom: .2rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: .2rem;
+      width: 1.5rem;
+    }
+  }
 
   ul {
+    display: block;
+    float: right;
     height: 100%;
+    list-style: none;
+    margin-right: 1rem;
   }
 
   li {
-    display: inline-block;
+    display: block;
+    float: left;
+    height: 100%;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    text-align: center;
 
-    :hover {
-      background-color: $primary-dark;
+    &:hover {
+      background-color: $primary-light;
+      border-bottom: .1rem solid $secondary;
     }
   }
 
   a {
     color: $white;
-    font-size: $text-header;
+    display: block;
+    font-size: $text-subheader;
+    padding-top: .6rem;
     text-decoration: none;
+  }
+
+  @media (min-width: $display-phone){
+
+    button {
+      display: none;
+    }
+  }
+
+  @media (max-width: $display-phone){
+
+    ul {
+      display: none;
+
+      &.open {
+        background-color: $text-primary;
+
+        li {
+          float: none;
+        }
+      }
+    }
   }
 }
