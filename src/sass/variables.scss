@@ -8,14 +8,16 @@ $text-header: 1.75rem;
 $text-subheader: 1.25rem;
 $text-content: 1rem;
 
-$white: #FFFFFF;
+$white: #fff;
 $text-primary: #212121;
 $text-secondary: #727272;
-$primary-dark: #1976D2;
-$primary: #2196F3;
-$primary-light: #42A5F5;
-$secondary: #FF5722;
-$divider: #B6B6B6;
+$primary-dark: #1976d2;
+$primary: #2196f3;
+$primary-light: #42a5f5;
+$secondary: #ff5722;
+$divider: #b6b6b6;
+$color-shadow: rgba(0, 0, 0, .3);
 
-$display-phone: 768px;
-$display-desktop: 992px;
+$display-xs: 768px;
+$display-sm: 992px;
+$display-md: 1200px;

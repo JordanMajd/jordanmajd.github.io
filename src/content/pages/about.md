@@ -1,6 +1,7 @@
 ---
 title: About
-layout: about.html
+date: 2016-05-26
+layout: post.html
 ---
 
-About me
+Blah blah blah

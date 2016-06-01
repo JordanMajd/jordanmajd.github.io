@@ -1,6 +1,17 @@
-{% extends "layout.html" %}
+{% extends "layout-nav.html" %}
 {% block content %}
+<ul class="post-list">
   {% for project in collections.projects %}
-    <a href="{{ project.date | date('Y/m/d') }}/{{ project.title | replace(' ', '-', 'g') }}">{{project.title}}</a>
+  <li class="post">
+    <article>
+      <a class="title" href="/projects/{{project.title | replace(' ', '-', g) | url_encode}}">{{project.title|title}}</a><span> - {{project.date | date('m/d/Y')}}</span>
+      <p class="body">
+        <span>{{post.description}}</span>
+        <a class="more" href="/projects/{{project.title | replace(' ', '-', g) | url_encode}}">Continue Reading...</a>
+      </p>
+      <hr />
+    </article>
+  </li>
   {% endfor %}
+</ul>
 {% endblock %}

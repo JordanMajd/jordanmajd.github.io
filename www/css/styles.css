@@ -16,13 +16,81 @@ html {
 }
 
 .container {
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.3);
   height: 100%;
-  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 68px;
   width: 100%;
 }
 
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+
+.post-list {
+  list-style: none;
+}
+
+.post a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post h1.title {
+  display: inline;
+}
+
+.post .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.post .body {
+  box-shadow: inset 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.post .more {
+  display: block;
+  margin-top: 1rem;
+}
+
+.post p {
+  padding: 1rem;
+}
+
+.post hr {
+  background: #2196f3;
+  background-image: linear-gradient(to right, #fff, #2196f3, #fff);
+  border: 0;
+  height: 1px;
+  margin-bottom: 2rem;
+  margin-top: .75rem;
+}
+
 nav {
-  background-color: #2196F3;
+  background-color: #2196f3;
   height: 50px;
   padding-left: .2rem;
   padding-right: .2rem;
@@ -30,32 +98,6 @@ nav {
   top: 0;
   width: 100%;
   z-index: 10;
-}
-
-nav button {
-  background-color: #2196F3;
-  border: 0;
-  display: block;
-  float: left;
-  height: 100%;
-  padding-left: .5rem;
-  padding-right: .5rem;
-}
-
-nav button:hover {
-  background-color: #42A5F5;
-}
-
-nav button span {
-  background-color: #FFFFFF;
-  border-radius: 25%;
-  display: block;
-  height: .2rem;
-  margin-bottom: .2rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .2rem;
-  width: 1.5rem;
 }
 
 nav ul {
@@ -66,43 +108,37 @@ nav ul {
   margin-right: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  nav ul {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
 nav li {
-  display: block;
-  float: left;
+  display: inline-block;
   height: 100%;
-  padding-left: .75rem;
-  padding-right: .75rem;
   text-align: center;
 }
 
 nav li:hover {
-  background-color: #42A5F5;
-  border-bottom: 0.1rem solid #FF5722;
+  background-color: #42a5f5;
+  border-bottom: 0.1rem solid #ff5722;
 }
 
 nav a {
-  color: #FFFFFF;
+  color: #fff;
   display: block;
   font-size: 1.25rem;
-  padding-top: .6rem;
+  padding: .75rem .75rem .5rem;
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  nav button {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-  }
-  nav ul.open {
-    background-color: #212121;
-  }
-  nav ul.open li {
-    float: none;
+@media only screen and (max-width: 768px) {
+  nav a {
+    padding: .75rem .2rem .5rem;
   }
 }
 
@@ -146,7 +182,7 @@ nav a {
 }
 
 .welcome-mat li :hover {
-  color: #2196F3;
+  color: #2196f3;
   text-decoration: underline;
 }
 

@@ -18,9 +18,77 @@ html {
 }
 
 .container {
+  box-shadow: 0 2px 4px 4px $color-shadow;
   height: 100%;
-  padding-top: $header-size;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: $header-size + 18px;
   width: 100%;
+
+  @media only screen and (min-width: $display-md){
+    width: 1170px;
+  }
+
+  @media only screen and (min-width: $display-sm) and (max-width: $display-md){
+    width: 970px;
+  }
+
+  @media only screen and (min-width: $display-xs) and (max-width: $display-sm){
+    width: 750px;
+  }
+}
+
+.post-list {
+  list-style: none;
+}
+
+.post {
+  a {
+    color: $primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    &.title {
+      display: inline;
+    }
+  }
+
+  .title {
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .body {
+    // background-color: $divider;
+    box-shadow: inset 2px 2px 1px 1px $color-shadow;
+  }
+
+  .more {
+    display: block;
+    margin-top: 1rem;
+  }
+
+
+  p {
+    padding: 1rem;
+  }
+
+  hr {
+    background: $primary;
+    background-image: linear-gradient(to right, $white, $primary, $white);
+    border: 0;
+    height: 1px;
+    margin-bottom: 2rem;
+    margin-top: .75rem;
+  }
 }
 
 @import './nav';

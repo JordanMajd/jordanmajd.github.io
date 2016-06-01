@@ -1,8 +1,8 @@
-{% extends "layout.html" %}
+{% extends "layout-nav.html" %}
 {% block content %}
-  <h1>{{ title }}</h1>
-  <h4>
-    {{ date | date('Y/m/d') }}
-  </h4>
+<article class="post">
+  <h1 class="title">{{ title }}</h1><span> - {{ date | date('Y/m/d') }}</span>
+  <hr />
   {{ contents | safe }}
+</article>
 {% endblock %}

@@ -64,7 +64,7 @@ metalsmith.use(env());
 
 metalsmith.use(collections({
   pages: {
-    pattern: paths.pages + '*.md',
+    pattern: paths.pages + '/*.md',
   },
   posts: {
     pattern: paths.posts + '/*.md',
@@ -93,12 +93,12 @@ metalsmith.use(permalinks({
     match: {
       collection: 'posts'
     },
-    pattern: ':collection/:date/:title'
+    pattern: ':collection/:title'
   }, {
     match: {
       collection: 'projects'
     },
-    pattern: ':collection/:date/:title'
+    pattern: ':collection/:title'
   }]
 }));
 
