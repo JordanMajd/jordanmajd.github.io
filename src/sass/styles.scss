@@ -1,4 +1,5 @@
 @import './variables';
+@import './prism';
 
 * {
   box-sizing: border-box;
@@ -45,6 +46,9 @@ html {
 }
 
 .post {
+
+  padding: 1rem;
+
   a {
     color: $primary;
     text-decoration: none;
@@ -66,9 +70,21 @@ html {
     text-decoration: none;
   }
 
+  .title-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 150px;
+    background-position: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .body {
     // background-color: $divider;
-    box-shadow: inset 2px 2px 1px 1px $color-shadow;
+    // box-shadow: inset 1px 1px 1px 1px $color-shadow;
   }
 
   .more {
@@ -78,7 +94,14 @@ html {
 
 
   p {
-    padding: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  ul {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
   }
 
   hr {
