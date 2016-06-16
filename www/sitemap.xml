@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url> <loc>http://jordanmajd.com/index.html</loc> </url>
 <url> <loc>http://jordanmajd.com/about/index.html</loc> </url>
-<url> <loc>http://jordanmajd.com/projects/index.html</loc> </url>
 <url> <loc>http://jordanmajd.com/posts/index.html</loc> </url>
-<url> <loc>http://jordanmajd.com/posts/openssh-vulnerability-patch/index.html</loc> </url>
+<url> <loc>http://jordanmajd.com/projects/index.html</loc> </url>
 <url> <loc>http://jordanmajd.com/posts/install-and-run-postgres-on-osx/index.html</loc> </url>
+<url> <loc>http://jordanmajd.com/posts/openssh-vulnerability-and-patch/index.html</loc> </url>
 <url> <loc>http://jordanmajd.com/projects/first-project/index.html</loc> </url>
 </urlset>
