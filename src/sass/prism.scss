@@ -69,12 +69,14 @@ pre[class*="language-"] {
 	border-radius: 0.3em;
 }
 
+:not(pre) > code,
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background-color: #fdf6e3; /* base3 */
 }
 
 /* Inline code */
+:not(pre) > code,
 :not(pre) > code[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;

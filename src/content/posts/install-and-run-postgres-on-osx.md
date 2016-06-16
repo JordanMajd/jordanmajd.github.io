@@ -60,7 +60,9 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 Let's talk about what each of these commands does so we understand why it runs automatically.
 
-`ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents`
+```bash
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+```
 
 Here is an explainshell breaking down the [ln -svf](http://www.explainshell.com/explain?cmd=ln+-sfv+%2Fusr%2Flocal%2Fopt%2Fpostgresql%2F*.plist+~%2FLibrary%2FLaunchAgents) command.
 
@@ -68,7 +70,9 @@ This takes the `.plist` file in `/usr/local/opt/postgressql` and creates a symbo
 
 A symbolic link creates a reference to a file, this allows the file seem like it is in many different locations but is only in one. Here we `/usr/local/opt/postgressql`, but the computer also thinks it is also at another URI, `~/Library/LaunchAgents`. If the file is modified in either spot, it will modify the original file.
 
-`launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist`
+```bash
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+```
 
 `launchctl` is what OSX uses to load daemons and agents in the background. It is used to manage the computers networking, voice over, USB and other long running processes.
 
