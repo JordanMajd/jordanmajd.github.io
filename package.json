@@ -4,7 +4,7 @@
   "description": "A metalsmith site to share my thoughts and projects.",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production node index.js",
+    "build": "NODE_ENV=production node index.js; cp layouts/404.html www/404.html",
     "start": "node index.js",
     "deploy": "git checkout development; git subtree push --prefix www origin master"
   },
