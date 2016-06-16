@@ -4,7 +4,7 @@
   {% for post in collections.posts %}
   <li class="post">
     <article>
-      <a class="title" href="/posts/{{post.title | replace(' ', '-', g) | url_encode}}">{{post.title|title}}</a><span> - {{post.date | date('m/d/Y')}}</span>
+      <a class="title" href="/posts/{{post.title | replace(' ', '-', g) | lower }}">{{post.title|title}}</a><span> - {{post.date | date('m/d/Y')}}</span>
       <p class="body">
         <span>{{post.description}}</span>
         <a class="more" href="/posts/{{post.title | replace(' ', '-', g) | url_encode}}">Continue Reading...</a>
