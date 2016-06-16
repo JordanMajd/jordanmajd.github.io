@@ -27,16 +27,13 @@ html {
   padding-right: 2rem;
   padding-top: $header-size + 18px;
   width: 100%;
-
-  @media only screen and (min-width: $display-md){
+  @media only screen and (min-width: $display-md) {
     width: 1170px;
   }
-
-  @media only screen and (min-width: $display-sm) and (max-width: $display-md){
+  @media only screen and (min-width: $display-sm) and (max-width: $display-md) {
     width: 970px;
   }
-
-  @media only screen and (min-width: $display-xs) and (max-width: $display-sm){
+  @media only screen and (min-width: $display-xs) and (max-width: $display-sm) {
     width: 750px;
   }
 }
@@ -46,7 +43,6 @@ html {
 }
 
 .post {
-
   padding: 1rem;
 
   a {
@@ -59,9 +55,9 @@ html {
   }
 
   h1 {
-
     padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
+
     &.title {
       display: inline;
     }
@@ -95,16 +91,15 @@ html {
     margin-top: 1rem;
   }
 
-
   p {
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
   }
 
   ul {
     padding-left: 1rem;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
   }
 
   hr {
@@ -114,6 +109,60 @@ html {
     height: 1px;
     margin-bottom: 2rem;
     margin-top: .75rem;
+  }
+}
+
+#splash-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#splash {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.fourohfour {
+  background-color: $primary;
+  color: $white;
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul {
+    display: block;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    :hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  a {
+    color: $text-primary;
+    font-family: $font-secondary;
+    text-decoration: none;
   }
 }
 
