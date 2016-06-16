@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=production node index.js",
     "start": "node index.js",
-    "deploy": "npm run build; git commit -am \"deploying\"; git checkout development; git subtree push --prefix www origin master"
+    "deploy": "git checkout development; git subtree push --prefix www origin master"
   },
   "author": "Jordan Majd <jordan@madtitanstudios.com>",
   "license": "MIT",
