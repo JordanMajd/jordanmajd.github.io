@@ -4,10 +4,10 @@
   {% for post in collections.posts %}
   <li class="post">
     <article>
-      <a class="title" href="/posts/{{ post.title | lower | urelencode |replace(' ', '-', g) }}">{{post.title|title}}</a><span> - {{post.date | date('m/d/Y')}}</span>
+      <a class="title" href="/posts/{{ post.title | lower | urlencode |replace(' ', '-', g) }}">{{post.title|title}}</a><span> - {{post.date | date('m/d/Y')}}</span>
       <p class="body">
         <span>{{post.description}}</span>
-        <a class="more" href="/posts/{{ post.title | lower | urelencode |replace(' ', '-', g) }}">Continue Reading...</a>
+        <a class="more" href="/posts/{{ post.title | lower | urlencode |replace(' ', '-', g) }}">Continue Reading...</a>
       </p>
       <hr />
     </article>
