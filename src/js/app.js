@@ -94,7 +94,7 @@
 
   Matrix2.prototype.createGrid = function() {
     this.forEach(function(cell, vector) {
-      var isAlive = Math.random() < 0.5;
+      var isAlive = Math.random() < 0.15;
       this.set(vector, new Cell(isAlive));
     }, this);
   };
