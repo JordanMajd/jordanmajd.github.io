@@ -53,8 +53,8 @@ let metalsmith = Metalsmith(__dirname);
 
 metalsmith.source(paths.src);
 
-// ignore sass files that aren't main
-metalsmith.use(ignore(['sass/!(styles).scss']));
+// ignore sass files that aren't main sass or cv sass
+metalsmith.use(ignore(['sass/!(styles|cv).scss']));
 
 metalsmith.use(metadata({
   config: 'config.json'
@@ -72,7 +72,7 @@ metalsmith.use(collections({
     reverse: true
   },
   projects: {
-    pattern: paths.projects + '*.md',
+    pattern: paths.projects + '/*.md',
     sortBy: 'date',
     reverse: true
   }
