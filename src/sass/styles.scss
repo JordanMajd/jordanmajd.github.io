@@ -63,20 +63,27 @@ html {
     }
   }
 
+  h2 {
+    margin-top: 3rem;
+  }
+
   .title {
     font-family: $font-secondary;
     font-size: 1.5rem;
     text-decoration: none;
   }
 
-  .title-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-size: 150px;
-    background-position: 10%;
+  .subtitle {
+    font-size: 0.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }

@@ -4,6 +4,9 @@
   {% for post in collections.posts %}
   <li class="post">
     <article>
+      {% if post.image %}
+      <img src="{{ post.image }}"></img>
+      {% endif %}
       <a class="title" href="/posts/{{ post.title | lower | replace(' ', '-', 'g')| url_encode }}">{{ post.title }}</a><span> - {{post.date | date('m/d/Y')}}</span>
       <p class="body">
         <span>{{post.description}}</span>
