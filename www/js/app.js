@@ -1,12 +1,13 @@
-'use strict';
-
 //GAME OF LIFE
-(function () {
+(function() {
   'use strict';
 
-  var directions = [new Vector2(0, -1), new Vector2(1, -1), new Vector2(1, 0), new Vector2(1, 1), new Vector2(0, 1), new Vector2(-1, 1), new Vector2(-1, 0), new Vector2(-1, -1)];
+  var directions = [new Vector2(0, -1), new Vector2(1, -1), new Vector2(1, 0),
+    new Vector2(1, 1), new Vector2(0, 1), new Vector2(-1, 1), new Vector2(-1, 0),
+    new Vector2(-1, -1)
+  ];
 
-  var colors = ['#FF5722' /*, '#f44336', '#ffeb3b' */];
+  var colors = ['#FF5722' /*, '#f44336', '#ffeb3b' */ ];
   var backgroundColor = '#FFF';
 
   function GameOfLife(width, height, scale, canvasId, tickRate) {
@@ -20,22 +21,23 @@
     this.matrix.createGrid();
   }
 
-  GameOfLife.prototype.update = function () {
+  GameOfLife.prototype.update = function() {
     var self = this;
-    this.matrix.forEach(function (cell, vector) {
+    this.matrix.forEach(function(cell, vector) {
       var neighborCount = self.matrix.getLivingNeighborCount(vector);
       cell.act(neighborCount);
     });
   };
 
-  GameOfLife.prototype.draw = function () {
+
+  GameOfLife.prototype.draw = function() {
     var canvas = document.getElementById(this.canvasId);
     var context = canvas.getContext('2d');
 
     if (!this.aliveStyle || Math.random() < 0.3) {
       this.aliveStyle = colors[Math.floor(Math.random() * colors.length)];
     }
-    this.matrix.forEach(function (cell, vector) {
+    this.matrix.forEach(function(cell, vector) {
       if (cell.alive) {
         context.fillStyle = this.aliveStyle;
       } else {
@@ -45,7 +47,8 @@
     }, this);
   };
 
-  GameOfLife.prototype.tick = function (timestamp) {
+
+  GameOfLife.prototype.tick = function(timestamp) {
 
     if (timestamp - this.startTime > this.tickRate) {
       this.update();
@@ -54,57 +57,68 @@
     }
 
     var self = this;
-    window.requestAnimationFrame(function (timestamp) {
+    window.requestAnimationFrame(function(timestamp) {
+      self.tick.call(self, timestamp);
+    });
+
+  };
+
+
+  GameOfLife.prototype.run = function() {
+    var self = this;
+    window.requestAnimationFrame(function(timestamp) {
       self.tick.call(self, timestamp);
     });
   };
 
-  GameOfLife.prototype.run = function () {
-    var self = this;
-    window.requestAnimationFrame(function (timestamp) {
-      self.tick.call(self, timestamp);
-    });
-  };
 
   function Vector2(x, y) {
     this.x = x;
     this.y = y;
   }
 
-  Vector2.prototype.add = function (other) {
+
+  Vector2.prototype.add = function(other) {
     return new Vector2(this.x + other.x, this.y + other.y);
   };
+
 
   function Matrix2(width, height) {
 
     this.matrix = new Array(width * height);
     this.width = width;
     this.height = height;
+
   }
 
-  Matrix2.prototype.createGrid = function () {
-    this.forEach(function (cell, vector) {
+
+  Matrix2.prototype.createGrid = function() {
+    this.forEach(function(cell, vector) {
       var isAlive = Math.random() < 0.15;
       this.set(vector, new Cell(isAlive));
     }, this);
   };
 
-  Matrix2.prototype.isInside = function (vector) {
+
+  Matrix2.prototype.isInside = function(vector) {
     return vector.x >= 0 && vector.x < this.width && vector.y >= 0 && vector.y < this.height;
   };
 
-  Matrix2.prototype.get = function (vector) {
+
+  Matrix2.prototype.get = function(vector) {
     return this.matrix[vector.x + this.width * vector.y];
   };
 
-  Matrix2.prototype.set = function (vector, value) {
+
+  Matrix2.prototype.set = function(vector, value) {
     this.matrix[vector.x + this.width * vector.y] = value;
   };
 
-  Matrix2.prototype.getLivingNeighborCount = function (vector) {
+
+  Matrix2.prototype.getLivingNeighborCount = function(vector) {
     var livingCount = 0;
     var self = this;
-    directions.forEach(function (direction) {
+    directions.forEach(function(direction) {
       var checkDirection = vector.add(direction);
       if (self.isInside(checkDirection)) {
         var cell = self.get(checkDirection);
@@ -116,7 +130,8 @@
     return livingCount;
   };
 
-  Matrix2.prototype.forEach = function (callbackFunc, context) {
+
+  Matrix2.prototype.forEach = function(callbackFunc, context) {
     var yCount = 0;
     var xCount = 0;
     for (var y = 0; y < this.height; y++) {
@@ -133,13 +148,15 @@
     this.alive = isAlive;
   }
 
-  Cell.prototype.act = function (neighborCount) {
+
+  Cell.prototype.act = function(neighborCount) {
     if (this.alive && (neighborCount < 2 || neighborCount > 3)) {
       this.alive = false;
     } else if (neighborCount === 3) {
       this.alive = true;
     }
   };
+
 
   var canvasContainer = document.getElementById('splash-container');
   var canvas = document.getElementById('splash');
@@ -155,10 +172,10 @@
 
   var tickRate = 1000;
 
-  var gol = new GameOfLife(width, height, scale, 'splash', tickRate);
+  var gol = new GameOfLife(width , height, scale, 'splash', tickRate);
   gol.run();
 
-  window.onresize = function () {
+  window.onresize = function() {
 
     width = canvasContainer.scrollWidth;
     height = canvasContainer.scrollHeight;

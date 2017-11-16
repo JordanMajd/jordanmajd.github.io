@@ -104,10 +104,11 @@ metalsmith.use(permalinks({
   }]
 }));
 
+//WTF babel
 metalsmith.use(babel({
-  presets: ['es2015']
+  presets:['es2015'],
+  comments: false
 }));
-
 
 metalsmith.use(sass({
   sourceMap: process.env.NODE_ENV !== 'production',
@@ -152,7 +153,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 metalsmith.destination(paths.build);
 
-metalsmith.build(function(err) {
+metalsmith.build(function(err/*, files*/) {
 
   if (err) {
     throw err;

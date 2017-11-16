@@ -2,13 +2,13 @@
 (function() {
   'use strict';
 
-  let directions = [new Vector2(0, -1), new Vector2(1, -1), new Vector2(1, 0),
+  var directions = [new Vector2(0, -1), new Vector2(1, -1), new Vector2(1, 0),
     new Vector2(1, 1), new Vector2(0, 1), new Vector2(-1, 1), new Vector2(-1, 0),
     new Vector2(-1, -1)
   ];
 
-  let colors = ['#FF5722' /*, '#f44336', '#ffeb3b' */ ];
-  let backgroundColor = '#FFF';
+  var colors = ['#FF5722' /*, '#f44336', '#ffeb3b' */ ];
+  var backgroundColor = '#FFF';
 
   function GameOfLife(width, height, scale, canvasId, tickRate) {
 
@@ -158,21 +158,21 @@
   };
 
 
-  let canvasContainer = document.getElementById('splash-container');
-  let canvas = document.getElementById('splash');
+  var canvasContainer = document.getElementById('splash-container');
+  var canvas = document.getElementById('splash');
 
-  let width = canvasContainer.scrollWidth;
-  let height = canvasContainer.scrollHeight;
+  var width = canvasContainer.scrollWidth;
+  var height = canvasContainer.scrollHeight;
 
-  let blockSize = 64;
-  let scale = Math.ceil(canvasContainer.scrollWidth / blockSize);
+  var blockSize = 64;
+  var scale = Math.ceil(canvasContainer.scrollWidth / blockSize);
 
   canvas.width = width;
   canvas.height = height;
 
-  let tickRate = 1000;
+  var tickRate = 1000;
 
-  let gol = new GameOfLife(width , height, scale, 'splash', tickRate);
+  var gol = new GameOfLife(width , height, scale, 'splash', tickRate);
   gol.run();
 
   window.onresize = function() {
