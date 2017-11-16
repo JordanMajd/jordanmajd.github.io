@@ -3,7 +3,7 @@ title: 360 Capture in UE4 with NVIDIA Ansel
 date: 04-01-2017
 layout: post.html
 image: /img/posts/360/360_infiltrator.jpeg
-description: How to take ultra high res 360 screenshots with Unreal Engine.
+description: "Ansel is a toolkit by NVIDIA that enables users to take state of the art in game photographs. It comes with a rich feature set that overcomes the limitations of traditional screen capture methods. Ansel supports 360 and stereo screenshots, making it easy to create content for virtual reality. Super-resolution takes place on the graphics card, allowing users to break free from their 1080p monitors and capture screenshots at insane resolutions (I just took a 2.3 gigapixel screenshot!) Users have full camera control, can apply post processing filters, visual effects and take photos using HDR."
 ---
 
 ![360 screenshot of UE4’s Infiltrator Demo](/img/posts/360/360_infiltrator.jpeg)

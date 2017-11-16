@@ -67,6 +67,15 @@ html {
     margin-top: 3rem;
   }
 
+  blockquote {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    color: $primary-light;
+  }
+
   .title {
     font-family: $font-secondary;
     font-size: 1.5rem;
@@ -101,6 +110,7 @@ html {
   p {
     padding-bottom: .5rem;
     padding-top: .5rem;
+    line-height: 1.5;
   }
 
   ul {
