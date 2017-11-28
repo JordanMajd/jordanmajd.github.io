@@ -2,7 +2,6 @@
 
 const Metalsmith = require('metalsmith');
 const markdown = require('metalsmith-markdown');
-const babel = require('metalsmith-babel');
 const sass = require('metalsmith-sass');
 const layout = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
@@ -104,11 +103,6 @@ metalsmith.use(permalinks({
   }]
 }));
 
-//WTF babel
-metalsmith.use(babel({
-  presets:['es2015'],
-  comments: false
-}));
 
 metalsmith.use(sass({
   sourceMap: process.env.NODE_ENV !== 'production',
@@ -142,12 +136,7 @@ if (process.env.NODE_ENV !== 'production') {
   }));
 
 } else {
-  metalsmith.use(babel(
-    {
-        presets:['es2015'],
-    }
-  ))
-  .use(uglify())
+  metalsmith.use(uglify())
   metalsmith.use(htmlMinifier());
   metalsmith.use(siteMap({
     hostname: 'http://jordanmajd.com'

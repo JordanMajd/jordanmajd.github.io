@@ -2,7 +2,7 @@
 title: CSU Immersive Experience
 date: 09-10-2016
 layout: post.html
-image: /img/projects/csu.webp
+image: /img/projects/csu.jpeg
 ---
 
 

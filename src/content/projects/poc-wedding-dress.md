@@ -3,7 +3,7 @@ title: Wedding Dresses VR
 status: Proof of Concept
 date: 11-10-2016
 layout: post.html
-image: /img/projects/csu.webp
+image: /img/projects/csu.jpeg
 ---
 
 

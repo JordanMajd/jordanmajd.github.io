@@ -3,7 +3,7 @@ title: Sketchup Arch-Viz
 status: Proof of Concept
 date: 06-10-2017
 layout: post.html
-image: /img/projects/csu.webp
+image: /img/projects/csu.jpeg
 ---
 
 
