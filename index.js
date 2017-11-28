@@ -142,10 +142,13 @@ if (process.env.NODE_ENV !== 'production') {
   }));
 
 } else {
-
-  metalsmith.use(uglify());
+  metalsmith.use(babel(
+    {
+        presets:['es2015'],
+    }
+  ))
+  .use(uglify())
   metalsmith.use(htmlMinifier());
-
   metalsmith.use(siteMap({
     hostname: 'http://jordanmajd.com'
   }));

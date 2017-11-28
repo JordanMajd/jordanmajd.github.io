@@ -4,9 +4,12 @@
   {% for project in collections.projects %}
   <li class="post">
     <article>
+      {% if project.image %}
+      <img src="{{ project.image }}"></img>
+      {% endif %}
       <a class="title" href="/projects/{{ project.title | lower | replace(' ', '-', g)| url_encode }}">{{ project.title }}</a><span> - {{project.date | date('m/d/Y')}}</span>
       <p class="body">
-        <span>{{post.description}}</span>
+        <span>{{project.description}}</span>
         <a class="more" href="/projects/{{ project.title | lower | replace(' ', '-', g)| url_encode }}">Continue Reading...</a>
       </p>
       <hr />
