@@ -1,7 +1,10 @@
 {% extends "layout-nav.html" %}
 {% block content %}
 <article class="post">
-  {% if image %}<div class="title-image" style="background-image: url({{ "'" + image + "'" }})"></div>{% endif %}
+  {% if image %}
+  <div class="title-image" style="background-image: url({{ "'" + image + "'" }})">
+  </div>
+  {% endif %}
   <h1 class="title">{{ title }}</h1>{% if date %}<span> - {{ date | date('m/d/Y') }}</span>{% endif %}
   <hr />
   {{ contents | safe }}

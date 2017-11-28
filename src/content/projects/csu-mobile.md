@@ -1,8 +1,8 @@
 ---
 title: CSU Immersive Experience Mobile
-date: 03-10-2017
+date: 2017-03-10
 layout: post.html
-image: /img/projects/csu.jpeg
+image: /img/projects/csu-mobile-space.gif
 ---
 
 Platform: Google Cardboard (iOS and Android)

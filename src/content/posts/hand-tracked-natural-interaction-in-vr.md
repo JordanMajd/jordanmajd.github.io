@@ -1,6 +1,6 @@
 ---
 title: Hand Tracked Natural Interaction in VR
-date: 03-01-2017
+date: 2017-03-01
 layout: post.html
 image: /img/posts/handtrack/ht_balloon.png
 description: "Virtual reality UX is hard. In the last year, our company has seen several virtual and augmented reality applications from inception to production. Each one has presented us with the same challenge; how to create an intuitive and natural user experience. Thankfully, every app brings us one step closer to answering this question."

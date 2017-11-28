@@ -1,8 +1,8 @@
 ---
 title: Sanofi Pastuer
-date: 09-26-2017
+date: 2017-09-26
 layout: post.html
-image: /img/projects/csu.jpeg
+image: /img/projects/sanofi.jpg
 ---
 
 

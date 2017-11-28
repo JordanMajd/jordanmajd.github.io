@@ -1,6 +1,6 @@
 ---
 title: Install and Run Postgres on OSX
-date: 12-16-2015
+date: 2015-12-16
 layout: post.html
 description: Installation, configuration and scripting Postgres server on OSX
 ---

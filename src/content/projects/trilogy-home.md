@@ -1,8 +1,8 @@
 ---
 title: Trilogy Home
-date: 09-22-2017
+date: 2017-09-22
 layout: post.html
-image: /img/projects/csu.jpeg
+image: /img/projects/trilogyhome.png
 ---
 
 Platform: HTC Vive

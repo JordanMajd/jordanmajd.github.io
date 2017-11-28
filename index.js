@@ -68,12 +68,12 @@ metalsmith.use(collections({
   posts: {
     pattern: paths.posts + '/*.md',
     sortBy: 'date',
-    reverse: false
+    reverse: true
   },
   projects: {
     pattern: paths.projects + '/*.md',
     sortBy: 'date',
-    reverse: false
+    reverse: true
   }
 }));
 
