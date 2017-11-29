@@ -8,6 +8,23 @@
       <img src="{{ project.image }}" />
       {% endif %}
       <a class="title" href="/projects/{{ project.title | lower | replace(' ', '-', 'g') | replace(',|&|--|-&', '', 'g') |  url_encode }}">{{ project.title }}</a><span> - {{project.date | date('m/d/Y')}}</span>
+
+      <div>
+
+      {% if project.status %}
+        <img class="inline" src="https://img.shields.io/badge/Status-{{project.status}}-brightgreen.svg"/>
+      {% endif %}
+
+      {% if project.engine %}
+      <img class="inline" src="https://img.shields.io/badge/Engine-{{project.engine}}-red.svg"/>
+      {% endif %}
+
+      {% if project.platform %}
+      <img class="inline" src="https://img.shields.io/badge/Platform-{{project.platform}}-blue.svg"/>
+      {% endif %}
+
+      </div>
+
       <p class="body">
         <span>{{project.description}}</span>
         <a class="more" href="/projects/{{ project.title | lower | replace(' ', '-', 'g') | replace(',|&|--|-&', '', 'g') |  url_encode }}">Continue Reading...</a>

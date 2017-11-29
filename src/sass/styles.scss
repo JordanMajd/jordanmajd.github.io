@@ -90,6 +90,10 @@ html {
     display: block;
   }
 
+  .inline {
+    display: inline-block;
+  }
+
   img {
     display: block;
     max-width: 100%;
@@ -128,6 +132,7 @@ html {
     margin-top: .75rem;
   }
 }
+
 
 #splash-container {
   position: fixed;

@@ -1,9 +1,11 @@
 ---
 title: Sketchup Arch-Viz
-status: Proof of Concept
 date: 2017-06-10
 layout: post.html
 image: /img/projects/hamiltoncreek.png
+status: Proof of Concept
+engine: Unreal
+platform: HTC Vive
 ---
 
 

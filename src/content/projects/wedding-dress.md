@@ -1,9 +1,11 @@
 ---
 title: Wedding Dresses VR
-status: Proof of Concept
 date: 2016-11-10
 layout: post.html
 image: /img/projects/weddingdresses.png
+status: Proof of Concept
+engine: Unity
+platform: Google Daydream
 ---
 
 

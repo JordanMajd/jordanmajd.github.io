@@ -3,12 +3,14 @@ title: CSU Immersive Experience Mobile
 date: 2017-03-10
 layout: post.html
 image: /img/projects/csu-mobile-space.gif
+status: Shipped
+engine: Unity
+platform: Google Cardboard, iOS, Android
+description: Porting an HTC Vive app to run on cell phones.
 ---
 
-Platform: Google Cardboard (iOS and Android)
-Built With: Unity
+Join us on an immersive journey into the heart of Colorado State University! Narrated by University President Tony Frank, this VR experience invites you to imagine how virtual and augmented reality technology will be used at Colorado State. Learn more about how the Office of the Vice President for Research at CSU is unlocking this new power of perception at https://vpr.colostate.edu/virtualreality/
 
-CSU Immersive Experience (Mobile)
 
 - Playback 4K video.
 - Display realtime interactive 3D graphics.
