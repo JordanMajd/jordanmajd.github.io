@@ -1,0 +1,23 @@
+{% extends "layout-nav.html" %}
+{% block content %}
+<article class="post">
+  <h1 class="title">{{ title }}</h1>{% if date %}<span> - {{ date | date('m/d/Y') }}</span>{% endif %}
+  <div>
+
+  {% if status %}
+    <img class="inline" src="https://img.shields.io/badge/Status-{{status}}-brightgreen.svg"/>
+  {% endif %}
+
+  {% if engine %}
+  <img class="inline" src="https://img.shields.io/badge/Engine-{{engine}}-red.svg"/>
+  {% endif %}
+
+  {% if platform %}
+  <img class="inline" src="https://img.shields.io/badge/Platform-{{platform}}-blue.svg"/>
+  {% endif %}
+
+  </div>
+  <hr />
+  {{ contents | safe }}
+</article>
+{% endblock %}
