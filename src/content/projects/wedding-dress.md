@@ -6,12 +6,13 @@ image: /img/projects/weddingdresses.png
 status: Proof of Concept
 engine: Unity
 platform: Google Daydream
+description: A client proof of concept developed in a single day to demonstrate how interactive video could be used for retail and e-commerce.
 ---
 
+A client proof of concept developed in a single day to demonstrate how interactive video could be used for retail and e-commerce.
 
-Platform: Google Daydream
-Game Engine: Unity
-
+- Gaze based user interaction.
 - Explore interactive video
-- 4k Video
-- transparency
+- Multiple 4k Video streams
+- Playing multiple 4K streams while maintaining 60FPS
+- Transparent video materials

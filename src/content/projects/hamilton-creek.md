@@ -6,12 +6,12 @@ image: /img/projects/hamiltoncreek.png
 status: Proof of Concept
 engine: Unreal
 platform: HTC Vive
+description: A client proof of concept to demonstrate how virtual reality can be used for real-time interactive architectural visualization.
 ---
 
-
-Platform: HTC Vive
-Built With: Unreal Engine
+TODO
 
 - Arch-Viz
-- gameplay
-- sketchup to UE4
+- Gameplay logic
+- Sketchup to UE4
+- Blueprints

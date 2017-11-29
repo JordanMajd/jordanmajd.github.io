@@ -27,7 +27,13 @@
 
       <p class="body">
         <span>{{project.description}}</span>
+        {% if project.ready %}
         <a class="more" href="/projects/{{ project.title | lower | replace(' ', '-', 'g') | replace(',|&|--|-&', '', 'g') |  url_encode }}">Continue Reading...</a>
+        {% elseif project.alt %}
+        {{ project.alt | safe}}
+        {% else %}
+        <div>Detailed write up coming soon.</div>
+        {% endif %}
       </p>
       <hr />
     </article>

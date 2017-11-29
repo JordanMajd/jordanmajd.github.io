@@ -6,5 +6,14 @@ image: /img/projects/trilogyhome.png
 status: Shipped
 engine: Unreal
 platform: HTC Vive
-description: Showcased in Partnership with HP and Trilogy at Breckenridge Film Festival, Trilogy Home brought Sketchup to life in Unreal Engine.
+description: Showcased at Breckenridge Film Festival, Trilogy Home brought Sketchup to life with Unreal Engine in partnership with HP and Trilogy Partners.
 ---
+
+TODO
+
+- partner with HP
+- Gameplay logic
+- Custom blueprints
+- Custom materials & material instancing.
+- Perf profiling
+- Graphics and forward rendering settings
