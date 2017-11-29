@@ -7,8 +7,12 @@
       {% if project.image %}
       <img src="{{ project.image }}" />
       {% endif %}
-      <a class="title" href="/projects/{{ project.title | lower | replace(' ', '-', 'g') | replace(',|&|--|-&', '', 'g') |  url_encode }}">{{ project.title }}</a><span> - {{project.date | date('m/d/Y')}}</span>
 
+      {% if project.ready %}
+      <a class="title" href="/projects/{{ project.title | lower | replace(' ', '-', 'g') | replace(',|&|--|-&', '', 'g') |  url_encode }}">{{ project.title }}</a><span> - {{project.date | date('m/d/Y')}}</span>
+      {% else %}
+      <span class="title">{{ project.title }}</span><span> - {{project.date | date('m/d/Y')}}</span>
+      {% endif %}
       <div>
 
       {% if project.status %}
