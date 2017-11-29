@@ -1,8 +1,0 @@
-{% extends "layout-nav.html" %}
-{% block content %}
-<article class="post">
-  <h1 class="title">{{ title }}</h1>{% if date %}<span> - {{ date | date('m/d/Y') }}</span>{% endif %}
-  <hr />
-  {{ contents | safe }}
-</article>
-{% endblock %}
