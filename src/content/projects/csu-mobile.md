@@ -1,7 +1,7 @@
 ---
 title: CSU Immersive Experience Mobile
 date: 2017-03-10
-layout: post.html
+layout: project.html
 image: /img/projects/csu-mobile-space.gif
 status: Shipped
 engine: Unity

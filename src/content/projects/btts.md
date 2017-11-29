@@ -1,7 +1,7 @@
 ---
 title: Blood, Toil, Tears & Sweat
 date: 2017-01-01
-layout: post.html
+layout: project.html
 image: /img/projects/bloodtearsandsweat.png
 status: Proof of Concept
 engine: Unity

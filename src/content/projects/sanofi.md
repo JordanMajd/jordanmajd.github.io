@@ -1,7 +1,7 @@
 ---
 title: Sanofi Holographic
 date: 2017-09-26
-layout: post.html
+layout: project.html
 image: /img/projects/sanofi.jpg
 status: Shipped
 engine: Unity

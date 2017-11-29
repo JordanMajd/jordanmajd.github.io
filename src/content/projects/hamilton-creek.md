@@ -1,7 +1,7 @@
 ---
 title: Sketchup Arch-Viz
 date: 2017-06-10
-layout: post.html
+layout: project.html
 image: /img/projects/hamiltoncreek.png
 status: Proof of Concept
 engine: Unreal

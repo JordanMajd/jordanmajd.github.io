@@ -1,7 +1,7 @@
 ---
 title: CSU Immersive Experience
 date: 2016-09-10
-layout: post.html
+layout: project.html
 image: /img/posts/handtrack/ht_csu.gif
 status: Shipped
 engine: Unity

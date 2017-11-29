@@ -1,7 +1,7 @@
 ---
 title: Trilogy Home
 date: 2017-09-22
-layout: post.html
+layout: project.html
 image: /img/projects/trilogyhome.png
 status: Shipped
 engine: Unreal

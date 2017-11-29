@@ -1,7 +1,7 @@
 ---
 title: Wedding Dresses VR
 date: 2016-11-10
-layout: post.html
+layout: project.html
 image: /img/projects/weddingdresses.png
 status: Proof of Concept
 engine: Unity
