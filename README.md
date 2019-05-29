@@ -26,15 +26,8 @@ To configure global variables, modify [src/config.json](/src/config.json).
 
 ## Roadmap
 
-- .editorconfig file
-- .eslint
-- .scsslint
-- mathjax
-- gists
-- deploy
-- bower
-- code styling / execution
-- implement unused deps in index.js
+- Merge posts and projects
+- Add RSS feed.
 
 ## License
 
