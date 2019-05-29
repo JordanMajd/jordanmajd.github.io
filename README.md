@@ -26,8 +26,9 @@ To configure global variables, modify [src/config.json](/src/config.json).
 
 ## Roadmap
 
-- Merge posts and projects
-- Add RSS feed.
+- Possibly merge posts and projects
+- Add RSS/Atom feeds.
+- Update CV to latest
 
 ## License
 

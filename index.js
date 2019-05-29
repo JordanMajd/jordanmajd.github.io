@@ -10,7 +10,6 @@ const metadata = require('metalsmith-metadata');
 const env = require('metalsmith-env');
 const ignore = require('metalsmith-ignore');
 
-
 // development imports
 const watch = require('metalsmith-watch');
 const serve = require('metalsmith-serve');
@@ -19,17 +18,6 @@ const serve = require('metalsmith-serve');
 const siteMap = require('metalsmith-mapsite');
 const uglify = require('metalsmith-uglify');
 const htmlMinifier = require('metalsmith-html-minifier');
-
-//TODO
-// const wordcount = require("metalsmith-word-count");
-// const uncss = require('metalsmith-uncss');
-// const eslint = require('metalsmith-eslint');
-// const pagination = require('metalsmith-pagination');
-// const concat = require('metalsmith-concat');
-// const drafts = require('metalsmith-drafts'); could use ignore instead
-// const branch = require('metalsmith-branch');
-// https://www.npmjs.com/package/metalsmith-imagemin
-// atom xml feed
 
 let paths = {};
 paths.src = 'src/';
