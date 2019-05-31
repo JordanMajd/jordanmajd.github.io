@@ -1,9 +1,6 @@
----
-title: Install and Run Postgres on OSX
-date: 2015-12-16
-layout: post.html
-description: Installation, configuration and scripting Postgres server on OSX
----
+$title=Install and Run Postgres on OSX
+$date=12/16/2015
+$description=Installation, configuration and scripting Postgres server on OSX
 
 
 This article covers installation the postgres server on OSX. It discusses how to launch the server in the foreground from the terminal or in the background as a daemon / agent. In addition, it discusses how to connect to the server with the `psql` command.

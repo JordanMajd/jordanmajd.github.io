@@ -4,10 +4,11 @@
 -- github.com/Fizzadar/Luapress/blob/develop/luapress/default_config.lua
 
 local config = {
+    title = 'jordanmajd.com',
+    template = 'jordanmajd',
     url = 'http://localhost:8000',
     index_page = 'home',
     force_index_page = true,
-    template = 'jordanmajd',
     envs = {
       production = {
         url = 'https://jordanmajd.com'

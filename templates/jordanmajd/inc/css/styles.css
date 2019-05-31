@@ -191,9 +191,6 @@ html {
   padding: 0;
   width: 100%; }
 
-body {
-  background-color: black; }
-
 .container {
   box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.3);
   min-height: 100%;
