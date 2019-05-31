@@ -2,7 +2,7 @@
 title: CSU Immersive Experience
 date: 2016-09-10
 layout: project.html
-image: /img/posts/handtrack/ht_csu.gif
+image: /inc/img/posts/handtrack/ht_csu.gif
 status: Shipped
 engine: Unity
 platform: HTC Vive, Oculus Rift
