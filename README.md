@@ -27,4 +27,14 @@ sudo apt install sassc
 
 make build
 make serve
+
+# maybe:
+luarocks install etlua --local
 ```
+
+
+## Roadmap
+
+- Multiple post types
+- ensure XML is esacped for RSS (&rsqo;)
+- Other templating languages `etlua`
