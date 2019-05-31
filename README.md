@@ -1,35 +1,30 @@
 # jordanmajd.com
 
-A metalsmith site to share my thoughts and projects.
 
-## About
 
-To install:
+## Getting Started
 
-```bash
-npm install
 ```
+# install lua
+sudo apt install lua5.1
+sudo apt install luarocks
 
-To build and run development server:
+# install discount
+wget http://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.4.tar.bz2
+tar xjf discount-2.2.4.tar.bz2
+cd discount-2.2.4
+./configure.sh
+vim Makefile # update $CFLAGS from -g to "-g -fPIC"
+make
+sudo make install
 
-```bash
-npm start
+# install luapress
+luarocks install luapress --local
+
+
+# install sassc
+sudo apt install sassc
+
+make build
+make serve
 ```
-
-To build for production:
-
-```bash
-npm run build
-```
-
-To configure global variables, modify [src/config.json](/src/config.json).
-
-## Roadmap
-
-- Possibly merge posts and projects
-- Add RSS/Atom feeds.
-- Update CV to latest
-
-## License
-
-This project is licensed under MIT, for further details see [LICENSE](/LICENSE).

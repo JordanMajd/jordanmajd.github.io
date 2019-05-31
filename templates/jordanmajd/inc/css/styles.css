@@ -1,0 +1,392 @@
+/* http://prismjs.com/download.html?themes=prism-solarizedlight&languages=markup+css+clike+javascript&plugins=line-numbers */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #657b83;
+  /* base00 */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #073642;
+  /* base02 */ }
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #073642;
+  /* base02 */ }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em; }
+
+:not(pre) > code,
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #fdf6e3;
+  /* base3 */ }
+
+/* Inline code */
+:not(pre) > code,
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #93a1a1;
+  /* base1 */ }
+
+.token.punctuation {
+  color: #586e75;
+  /* base01 */ }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #268bd2;
+  /* blue */ }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: #2aa198;
+  /* cyan */ }
+
+.token.entity {
+  color: #657b83;
+  /* base00 */
+  background: #eee8d5;
+  /* base2 */ }
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #859900;
+  /* green */ }
+
+.token.function {
+  color: #b58900;
+  /* yellow */ }
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #cb4b16;
+  /* orange */ }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber; }
+
+pre.line-numbers > code {
+  position: relative; }
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber; }
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body,
+html {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+body {
+  background-color: black; }
+
+.container {
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.3);
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 68px;
+  width: 100%; }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+      width: 970px; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+      width: 750px; } }
+
+.post-list {
+  list-style: none; }
+
+.post {
+  padding: 1rem; }
+  .post a {
+    color: #2196f3;
+    text-decoration: none; }
+    .post a:hover {
+      text-decoration: underline; }
+  .post h1 {
+    padding-top: 1rem;
+    padding-bottom: .5rem; }
+    .post h1.title {
+      display: inline; }
+  .post h2 {
+    margin-top: 3rem; }
+  .post blockquote {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    color: #42a5f5; }
+  .post .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none; }
+  .post .subtitle {
+    font-size: 0.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .post .inline {
+    display: inline-block; }
+  .post img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .post .more {
+    display: block;
+    margin-top: 1rem; }
+  .post p {
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    line-height: 1.5; }
+  .post ul {
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem; }
+  .post hr {
+    background: #2196f3;
+    background-image: linear-gradient(to right, #fff, #2196f3, #fff);
+    border: 0;
+    height: 1px;
+    margin-bottom: 2rem;
+    margin-top: .75rem; }
+
+#splash-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+#splash {
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.fourohfour {
+  background-color: #2196f3;
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  margin-left: auto;
+  margin-right: auto; }
+  .fourohfour ul {
+    display: block;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    text-align: center; }
+  .fourohfour li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem; }
+    .fourohfour li :hover {
+      color: #fff;
+      text-decoration: underline; }
+  .fourohfour a {
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none; }
+
+nav {
+  background-color: #2196f3;
+  height: 50px;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+  nav ul {
+    display: block;
+    float: right;
+    height: 100%;
+    list-style: none;
+    margin-right: 1rem; }
+    @media only screen and (max-width: 768px) {
+      nav ul {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; } }
+  nav li {
+    display: inline-block;
+    height: 100%;
+    text-align: center; }
+    nav li:hover {
+      background-color: #42a5f5;
+      border-bottom: 0.1rem solid #ff5722; }
+  nav a {
+    color: #fff;
+    display: block;
+    font-size: 1.25rem;
+    padding: .75rem .75rem .5rem;
+    text-decoration: none; }
+    @media only screen and (max-width: 768px) {
+      nav a {
+        padding: .75rem .2rem .5rem; } }
+
+.welcome-mat {
+  height: 100%;
+  padding: 2rem;
+  width: 100%; }
+  .welcome-mat img {
+    display: block;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%; }
+  .welcome-mat h1 {
+    font-family: "Montserrat", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .welcome-mat ul {
+    display: block;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    text-align: center; }
+  .welcome-mat li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem; }
+    .welcome-mat li :hover {
+      color: #2196f3;
+      text-decoration: underline; }
+  .welcome-mat a {
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none; }
