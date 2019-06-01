@@ -1,3 +1,0 @@
-#!/bin/sh
-
-exec '/usr/bin/lua5.1' -e 'package.path="/home/jmajd/Documents/.personal/jordanmajd.github.io/lua_modules/share/lua/5.1/?.lua;/home/jmajd/Documents/.personal/jordanmajd.github.io/lua_modules/share/lua/5.1/?/init.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;"..package.path; package.cpath="/home/jmajd/Documents/.personal/jordanmajd.github.io/lua_modules/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/?.so;"..package.cpath' -e 'local k,l,_=pcall(require,"luarocks.loader") _=k and l.add_context("luapress","3.5.2-1")' '/home/jmajd/Documents/.personal/jordanmajd.github.io/lua_modules/lib/luarocks/rocks/luapress/3.5.2-1/bin/luapress' "$@"
