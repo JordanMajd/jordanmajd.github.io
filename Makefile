@@ -37,52 +37,10 @@ test: html
 	@node src/check_links.js
 	@echo Done.
 
-tex: $(foreach CHAP,$(CHAPTERS),pdf/$(CHAP).tex) pdf/hints.tex $(patsubst img/%.svg,img/generated/%.pdf,$(SVGS))
-
-book.pdf: tex pdf/book.tex
-	cd pdf && sh build.sh book > /dev/null
-	mv pdf/book.pdf .	
-
-pdf/book_mobile.tex: pdf/book.tex
-	cat pdf/book.tex | sed -e 's/natbib}/natbib}\n\\usepackage[a5paper, left=5mm, right=5mm]{geometry}/' | sed -e 's/setmonofont.Scale=0.8./setmonofont[Scale=0.75]/' > pdf/book_mobile.tex
-
-book_mobile.pdf: pdf/book_mobile.tex tex
-	cd pdf && sh build.sh book_mobile > /dev/null
-	mv pdf/book_mobile.pdf .	
-
-pdf/hints.tex: $(foreach CHAP,$(CHAPTERS),$(CHAP).md) src/extract_hints.js
-	node src/extract_hints.js | node src/render_latex.js - > $@
-
 img/generated/%.pdf: img/%.svg
 	inkscape --export-pdf=$@ $<
 
-pdf/%.tex: %.md
-	node src/render_latex.js $< > $@
-
-book.epub: epub/titlepage.xhtml epub/toc.xhtml epub/hints.xhtml $(foreach CHAP,$(CHAPTERS),epub/$(CHAP).xhtml) \
-           epub/content.opf.src epub/style.css src/add_images_to_epub.js
-	rm -f $@
-	grep '<img' epub/*.xhtml | sed -e 's/.*src="\([^"]*\)".*/\1/' | xargs -I{} rsync -R "{}" epub
-	node src/add_images_to_epub.js
-	cd epub; zip -X ../$@ mimetype
-	cd epub; zip -X ../$@ -r * -x mimetype -x *.src
-
-epub/toc.xhtml: epub/toc.xhtml.src $(foreach CHAP,$(CHAPTERS),epub/$(CHAP).xhtml) epub/hints.xhtml
-	node src/generate_epub_toc.js $^ > $@
-
-epub/%.xhtml: %.md src/render_html.js
-	node src/render_html.js --epub $< > $@
-
-epub/hints.xhtml: $(foreach CHAP,$(CHAPTERS),$(CHAP).md) src/extract_hints.js src/render_html.js
-	node src/extract_hints.js | node src/render_html.js --epub - > $@
-
-epubcheck: book.epub
-	epubcheck book.epub 2>&1 | grep -v 'img/.*\.svg'
-
-book.mobi: book.epub img/cover.jpg
-	ebook-convert book.epub book.mobi --output-profile=kindle --cover=img/cover.jpg --remove-first-image
-
-serve: html
+serve: clean html
 	cd html; \
 	python3 -m http.server
 
