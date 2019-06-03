@@ -18,18 +18,18 @@
 
 <article>
 <nav>
-  <<if $in.prev_link>><a href="<<t $in.prev_link>>.html" title="previous article">◀</a> <</if>>
-  <a href="/index.html" title="cover">◆</a>
-  <<if $in.next_link>> <a href="<<t $in.next_link>>.html" title="next article">▶</a><</if>>
+  <<if $in.prev_link>><a href="<<t $in.prev_link>>.html" title="newer article">◀</a> <</if>>
+  <a href="/index.html" title="home">◆</a>
+  <<if $in.next_link>> <a href="<<t $in.next_link>>.html" title="older article">▶</a><</if>>
 </nav>
 
-<h1<<if $in.id>> id="<<t $in.id>>"<</if>>><<if $in.chap_num>><span class=chap_num><<t $in.category>> <<t $in.chap_num>></span><</if>><<t $in.title>></h1>
+<h1<<if $in.id>> id="<<t $in.id>>"<</if>>><<if $in.chap_num>><span class=chap_num><<t $in.date>></span><</if>><<t $in.title>></h1>
 
 <<h $in.content>>
 
 <nav>
-  <<if $in.prev_link>><a href="<<t $in.prev_link>>.html" title="previous article">◀</a> <</if>>
-  <a href="/index.html" title="cover">◆</a>
-  <<if $in.next_link>> <a href="<<t $in.next_link>>.html" title="next article">▶</a><</if>>
+  <<if $in.prev_link>><a href="<<t $in.prev_link>>.html" title="newer article">◀</a> <</if>>
+  <a href="/index.html" title="home">◆</a>
+  <<if $in.next_link>> <a href="<<t $in.next_link>>.html" title="older article">▶</a><</if>>
 </nav>
 </article>

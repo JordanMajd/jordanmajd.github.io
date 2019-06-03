@@ -1,9 +1,9 @@
-ARTICLES := $(basename $(shell ls article/[0-9][0-9]_*.md) .md)
+ARTICLES := $(basename $(shell ls article/[0-9][0-9][0-9][0-9]_[0-9][0-9]_[0-9][0-9]_*.md) .md)
 PROJECTS := $(basename $(shell ls project/[0-9][0-9]_*.md) .md)
 
 SVGS := $(wildcard img/*.svg)
 
-html: html/project html/article
+html: html/article
 
 html/article: $(foreach ART,$(ARTICLES),html/$(ART).html) html/js/acorn_codemirror.js
 
@@ -41,5 +41,5 @@ serve: html
 	python3 -m http.server
 
 clean:
-	rm html/project/[0-9][0-9]_*.html 2> /dev/null
-	rm html/article/[0-9][0-9]_*.html 2> /dev/null
+	#rm html/project/*.html 2> /dev/null
+	rm html/article/*.html 2> /dev/null
