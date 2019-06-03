@@ -1,16 +1,18 @@
----
+<!-- ---
 title: Sanofi Holographic
 date: 2017-09-26
 layout: project.html
-image: /img/projects/sanofi.jpg
+image: /img/project/sanofi.jpg
 status: Shipped
 engine: Unity
 platform: Microsoft HoloLens
 description: Sanofi Holographic is an immersive story which takes users on a journey which demonstrates how augmented and virtual reality can be used for data visualization, therapeutics and pharmaceuticals.
 ready: true
----
+--- -->
 
-![Charcoal storyboard of someone using an AR headset to visualize an influenza outbreak.](/img/projects/sanofi.jpg)
+# Sanofi Holographic
+
+!["Charcoal storyboard of someone using an AR headset to visualize an influenza outbreak." {chapter: "square-framed"}](/img/project/sanofi.jpg)
 <span class="subtitle">Charcoal storyboard demonstrating using augmented reality to visualize the supply chain management of an influenza virus.</span>
 
 Sanofi Holographic is an immersive story which takes users on a journey demonstrating how augmented and virtual reality can be used across the pharmaceutical industry. The story walks users through real world use cases; from visualizing [PyMOL][pymol] data of antibodies interacting with the influenza virus, to supply chain management of an outbreak, to therapeutic uses for pain management and rehabilitation such as the [Walk Again Project][walkagain].

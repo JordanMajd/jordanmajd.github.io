@@ -1,13 +1,15 @@
----
+<!-- ---
 title: Blood, Toil, Tears & Sweat
 date: 2017-01-01
 layout: project.html
-image: /img/projects/bloodtearsandsweat.png
+image: /img/project/bloodtearsandsweat.png
 status: Proof of Concept
 engine: Unity
 platform: Google Cardboard, iOS, Android
 description: Blood, Toil, Tears and Sweat was an experiment in collaboration with Emerson Stone, a product-focused design agency based out of Boulder.
----
+--- -->
+
+# Blood, Toil, Tears & Sweat
 
 TODO
 

@@ -1,13 +1,15 @@
----
+<!-- ---
 title: CSU Immersive Experience Mobile
 date: 2017-03-10
 layout: project.html
-image: /img/projects/csu-mobile-space.gif
+image: /img/project/csu-mobile-space.gif
 status: Shipped
 engine: Unity
 platform: Google Cardboard, iOS, Android
 description: Porting a heavyweight desktop HTC Vive application to run at 60fps on resource limited mobile devices.
----
+--- -->
+
+# CSU Immersive Experience Mobile
 
 TODO
 

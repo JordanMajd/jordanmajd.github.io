@@ -121,10 +121,6 @@ let renderer = {
     return "hr ignored";
   },
 
-  image(token) {
-    return "image ignored";
-  },
-
   html_inline(token) {
     return "html_inline ignored";
   },
@@ -252,6 +248,20 @@ let renderer = {
     return renderArray(token.children);
   },
 
+  image(token) {
+    let split = token.children[0].content.split('"');
+    let newToken = {
+      args: [
+        {
+          url: token.attrGet("src"),
+          alt: split[1],
+          chapter: split[3]
+        }
+      ]
+    };
+    return renderer.meta_figure(newToken);
+  },
+
   meta_figure(token) {
     let { url, alt, chapter } = token.args[0];
     let className = !chapter
@@ -336,5 +346,7 @@ let month = parseInt(date.slice(5, 7)) - 1;
 let day = parseInt(date.slice(9));
 
 var dateObject = new Date(year, month, day);
+
 metadata.date = dateObject.toLocaleDateString("en-us", dateOptions);
+
 console.log(template(metadata));
