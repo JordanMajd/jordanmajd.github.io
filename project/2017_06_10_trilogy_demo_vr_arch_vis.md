@@ -5,12 +5,10 @@
 ![{"square-framed"}](/img/project/hamiltoncreek.png)
 
 
-
 A client proof of concept to demonstrate how virtual reality can be used for real-time interactive architectural visualization.
 
-TODO
-
-- Arch-Viz
-- Gameplay logic
-- Sketchup to UE4
-- Blueprints
+I was responsible for the whole project, but here are some specifics:
+- Implementing gameplay logic in blueprints.
+- Importing models into UE4 from Sketchup.
+- Creating performant materials
+- Reducing draw calls by consolidating materials.
