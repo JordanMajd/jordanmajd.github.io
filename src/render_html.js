@@ -14,7 +14,9 @@ for (let arg of process.argv.slice(2)) {
   else file = arg == "-" ? "/dev/stdin" : arg
 }
 if (!file) throw new Error("No input file")
-let chapter = /^\d{2}_([^\.]+)/.exec(file) || [null, "hints"]
+
+let chapter = /^[^\.]+\/\d{2}_([^\.]+)/.exec(file);
+let directory = /^([^\.]+)\/\d{2}_[^\.]+/.exec(file)[1];
 
 let {tokens, metadata} = transformTokens(require("./markdown").parse(fs.readFileSync(file, "utf8"), {}), {
   defined: epub ? ["book", "html"] : ["interactive", "html"],
@@ -25,7 +27,7 @@ let {tokens, metadata} = transformTokens(require("./markdown").parse(fs.readFile
 
 let close = epub ? "/" : ""
 
-let chapters = fs.readdirSync(__dirname + "/..")
+let chapters = fs.readdirSync(__dirname + "/../" + directory)
     .filter(file => /^\d{2}_\w+\.md$/.test(file))
     .sort()
     .map(file => /^\d{2}_(\w+)\.md$/.exec(file)[1])
@@ -179,7 +181,8 @@ if (chapter && (index = chapters.indexOf(chapter[1])) > -1) {
   if (index > 0) metadata.prev_link = `${pad(index - 1)}_${chapters[index - 1]}`
   if (index < chapters.length - 1) metadata.next_link = `${pad(index + 1)}_${chapters[index + 1]}`
 }
+metadata.category = directory.toLocaleUpperCase();
 
-let template = mold.bake("chapter", fs.readFileSync(__dirname + `/${epub ? "epub_" : ""}chapter.html`, "utf8"))
+let template = mold.bake("chapter", fs.readFileSync(__dirname + `/chapter.html`, "utf8"));
 
-console.log(template(metadata))
+console.log(template(metadata));

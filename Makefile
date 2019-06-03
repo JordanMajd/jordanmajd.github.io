@@ -1,18 +1,17 @@
-CHAPTERS := $(basename $(shell ls [0-9][0-9]_*.md) .md)
+ARTICLES := $(basename $(shell ls article/[0-9][0-9]_*.md) .md)
+PROJECTS := $(basename $(shell ls project/[0-9][0-9]_*.md) .md)
 
 SVGS := $(wildcard img/*.svg)
 
-all: html book.pdf book_mobile.pdf book.epub book.mobi
+html: html/project html/article
 
-html: $(foreach CHAP,$(CHAPTERS),html/$(CHAP).html) html/js/acorn_codemirror.js
-#      code/skillsharing.zip code/solutions/20_3_a_public_space_on_the_web.zip html/js/chapter_info.js
+html/article: $(foreach ART,$(ARTICLES),html/$(ART).html) html/js/acorn_codemirror.js
+
+html/project: $(foreach PRO,$(PROJECTS),html/$(PRO).html) html/js/acorn_codemirror.js
 
 html/%.html: %.md
 	node src/render_html.js $< > $@
 	node src/build_code.js $<
-
-html/js/chapter_info.js: $(foreach CHAP,$(CHAPTERS),$(CHAP).md) code/solutions/* src/chapter_info.js
-	node src/chapter_info.js > html/js/chapter_info.js
 
 html/js/acorn_codemirror.js: node_modules/codemirror/lib/codemirror.js \
 	                     node_modules/codemirror/mode/javascript/javascript.js \
@@ -37,12 +36,10 @@ test: html
 	@node src/check_links.js
 	@echo Done.
 
-img/generated/%.pdf: img/%.svg
-	inkscape --export-pdf=$@ $<
-
-serve: clean html
+serve: html
 	cd html; \
 	python3 -m http.server
 
 clean:
-	rm html/[0-9][0-9]_*.html
+	rm html/project/[0-9][0-9]_*.html 2> /dev/null
+	rm html/article/[0-9][0-9]_*.html 2> /dev/null
