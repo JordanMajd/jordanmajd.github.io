@@ -1,16 +1,24 @@
-# Eloquent JavaScript
+# Jordan Majd
 
-These are the sources used to build the third edition of Eloquent
-JavaScript (https://eloquentjavascript.net).
+This is my personal website. 
+
 
 Feedback welcome, in the form of issues and pull requests.
 
-## Building
 
-    npm install
-    make html
+## Getting Started
 
-To build the PDF file:
+```
+npm install
+make serve
+```
 
-    apt-get install texlive texlive-xetex fonts-inconsolata fonts-symbola texlive-lang-chinese inkscape
-    make book.pdf
+## Credits & License
+
+This project is forked from [Marijn Haverbeke]'s book [Eloquent Javascript] and is licensed under
+a [Creative Commons attribution-noncommercial license].
+
+
+[Marijn Haverbeke]: https://marijnhaverbeke.nl/
+[Eloquent Javascript]: https://eloquentjavascript.net/
+[Creative Commons attribution-noncommercial license]: https://creativecommons.org/licenses/by-nc/3.0/

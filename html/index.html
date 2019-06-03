@@ -13,7 +13,7 @@
     .toc h3 { float: right; font-family: inherit; margin: 0; font-weight: normal; font-size: 90%; }
     @media screen and (max-width: 585px) { .toc h3 { display: none }}
     @media screen and (max-width: 500px) { #cover { margin-right: 0 } article { margin: 0 } }
-    ul.links { list-style-type: circle; }
+    ul.links, ul.toc { list-style-type: circle; }
     img.logo { vertical-align: text-top; padding: 0px 4px; border: 0; }
   </style>
 </head>
@@ -27,41 +27,9 @@
 
   <h1>Jordan Majd<div style="font-size: 70%">Software Developer</div></h1>
 
+  <p>&lt; <a href="/cv">Resume</a> &gt; &lt; <a href="/cv">Github</a> &gt; &lt; <a href="/cv">Twitter</a> &gt;</p>
+
   <p>I have a profound passion to create things.</p>
-
-  <!-- <ul class="links">
-    <li><a href="https://github.com/jordanmajd">CV</a></li>
-    <li><a href="https://github.com/jordanmajd">Github</a></li>
-    <li><a href="https://twitter.com/jordanmajd">Twitter</a></li>
-  </ul> -->
-
-  <script src="/js/acorn_codemirror.js"></script>
-  <link rel=stylesheet href="/js/node_modules/codemirror/lib/codemirror.css">
-  <script src="/js/sandbox.js"></script>
-  <script src="/js/chapter_info.js"></script>
-  <script src="/js/code.js"></script>
-
-  <div class="editor-wrap">
-      <textarea id="editor">
-// press run or hit ctrl + enter to run the code
-
-console.log('Hello, there!');
-console.log('To open my resume type cv.open();');
-console.log('Or, if you just need the url...');
-console.log(cv.url);
-console.log(twitter.url);
-console.log(github.url);
-      </textarea>
-      <div class="sandbox-output" id="output"></div>
-  </div>
-  <script>
-
-  </script>
-    <p>
-      <select id="chapters" class=control></select>
-      <select id="per_chapter" class=control></select>
-      <button id="run" class=control>run code</button>
-    </p>
 
 </div>
 
@@ -69,39 +37,29 @@ console.log(github.url);
 
   <h2>Articles</h2>
 
-  <ol class=toc>  
+  <ul class=toc>  
     <li style="counter-reset: li">
-      <h3>(Articles)</h3>
+      <h3>(Latest)</h3>
       <a href="/article/00_360_capture_in_ue4_with_nvidia_ansel.html">360 Capture In UE4 With Nvidia Ansel</a>
     </li>
     <li><a href="/article/01_360_capture_in_ue4_with_nvidia_ansel.html">360 Capture In UE4 With Nvidia Ansel</a>
-      <li><a href="/article/02_360_capture_in_ue4_with_nvidia_ansel.html">360 Capture In UE4 With Nvidia Ansel</a>
-    <li style="counter-reset: li">
-      <h3>(Portfolio)</h3>
-      <a href="/project/00_360_capture_in_ue4_with_nvidia_ansel.html">JavaScript and the Browser</a>
-    </li>
-    <li><a href="/project01_misc.html">The Document Object Model</a>
-    <li><a href="/project02_other.html">Handling Events</a>
-    <li><a href="/project13_name.html">Project: A Platform Game</a>
-  </ol>
+    <li><a href="/article/02_360_capture_in_ue4_with_nvidia_ansel.html">360 Capture In UE4 With Nvidia Ansel</a>
+  </ul>
 
   <h2>Portfolio</h2>
 
-  <ol class=toc>  
-      <li style="counter-reset: li">
-        <h3>(Articles)</h3>
-        <a href="/article/00_360_capture_in_ue4_with_nvidia_ansel.html">360 Capture In UE4 With Nvidia Ansel</a>
-      </li>
-      <li><a href="/article/01_360_capture_in_ue4_with_nvidia_ansel.html">360 Capture In UE4 With Nvidia Ansel</a>
-        <li><a href="/article/02_360_capture_in_ue4_with_nvidia_ansel.html">360 Capture In UE4 With Nvidia Ansel</a>
-      <li style="counter-reset: li">
-        <h3>(Portfolio)</h3>
-        <a href="/project/00_360_capture_in_ue4_with_nvidia_ansel.html">JavaScript and the Browser</a>
-      </li>
-      <li><a href="/project01_misc.html">The Document Object Model</a>
-      <li><a href="/project02_other.html">Handling Events</a>
-      <li><a href="/project13_name.html">Project: A Platform Game</a>
-    </ol>
+  <ul class=toc>  
+    <li style="counter-reset: li">
+      <h3>(Latest)</h3>
+      <a href="/project/00_360_capture_in_ue4_with_nvidia_ansel.html">JavaScript and the Browser</a>
+    </li>
+    <li><a href="/project/01_misc.html">The Document Object Model</a>
+    <li><a href="/project/02_other.html">Handling Events</a>
+    <li>
+      <h3>(Oldest)</h3>
+      <a href="/project/13_name.html">Project: A Platform Game</a>
+    </li>
+  </ul>
 
 </div>
 
