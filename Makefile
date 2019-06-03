@@ -81,3 +81,7 @@ epubcheck: book.epub
 
 book.mobi: book.epub img/cover.jpg
 	ebook-convert book.epub book.mobi --output-profile=kindle --cover=img/cover.jpg --remove-first-image
+
+serve: html
+	cd html; \
+	python3 -m http.server
