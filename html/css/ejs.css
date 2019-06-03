@@ -180,6 +180,10 @@ blockquote:before {
   left: -.5em;
 }
 
+blockquote.noquote:before, blockquote.noquote p:last-of-type:after {
+  content: '';
+}
+
 blockquote p:last-of-type:after {
   content: '”';
 }

@@ -272,8 +272,9 @@ let renderer = {
     }><img src="${escape(url)}" alt="${escape(alt)}"${close}></figure>`;
   },
 
-  meta_quote_open() {
-    return "\n\n<blockquote>";
+  meta_quote_open(token) {
+    let { className } = token.args[0];
+    return `\n\n<blockquote${className ? ` class="${className}"` : ""}>`;
   },
   meta_quote_close(token) {
     let { author, title } = token.args[0] || {};
