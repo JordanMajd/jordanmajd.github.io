@@ -1,16 +1,6 @@
-<!-- ---
-title: Sanofi Holographic
-date: 2017-09-26
-layout: project.html
-image: /img/project/sanofi.jpg
-status: Shipped
-engine: Unity
-platform: Microsoft HoloLens
-description: Sanofi Holographic is an immersive story which takes users on a journey which demonstrates how augmented and virtual reality can be used for data visualization, therapeutics and pharmaceuticals.
-ready: true
---- -->
-
 # Sanofi Holographic
+![{"shield"}](https://img.shields.io/badge/Engine-Unity-red.svg)
+![{"shield"}](https://img.shields.io/badge/Platform-Microsoft%20HoloLens-blue.svg)
 
 ![Charcoal storyboard of someone using an AR headset to visualize an influenza outbreak.{"square-framed"}](/img/project/sanofi.jpg)
 

@@ -382,6 +382,7 @@ blockquote footer:before {
 figure {
   max-width: 640px;
   margin: 0 30px;
+  text-align: center;
 }
 
 figure.chapter {
@@ -399,8 +400,15 @@ figure.framed img {
 }
 
 figure.square-framed img {
-  border-radius: 30px;
+  /* border-radius: 30px; */
   border: 4px double #666;
+}
+
+figure.shield {
+  display: inline;
+  max-width: 100%;
+  margin-left: 0em;
+  margin-right: 0.1em;
 }
 
 span.keyname { font-variant: small-caps }
@@ -412,7 +420,8 @@ span.keyname { font-variant: small-caps }
 }
 
 figure img {
-  max-width: 100%;
+  max-width: 98%;
+  
 }
 
 div.solution:before {

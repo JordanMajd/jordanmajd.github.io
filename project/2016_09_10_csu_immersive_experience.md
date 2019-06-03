@@ -1,16 +1,14 @@
-<!-- ---
-status: Shipped
-engine: Unity
-platform: HTC Vive, Oculus Rift
-description: CSU Immersive Experience is a virtual reality experience that combines hand-tracking and 3D 360 film to create a unique interactive experience.
-alt: <div>See my blog post <a href="/posts/hand-tracked-natural-interaction-in-vr/">Hand Tracked Natural Interaction in VR</a> for more info. A more detailed write up coming soon.</div>
---- -->
-
 # CSU Immersive Experience
+![{"shield"}](https://img.shields.io/badge/Engine-Unity-red.svg)
+![{"shield"}](https://img.shields.io/badge/Platform-HTC%20Vive,%20Oculus%20Rift-blue.svg)
 
 ![GIF showing a user interacting in VR using handtracking.{"square-framed"}](/img/article/handtrack/ht_csu.gif)
 
-TODO
+TODO Write this post
+
+CSU Immersive Experience is a virtual reality experience that combines hand-tracking and 3D 360 film to create a unique interactive experience.
+
+See my blog post [ Hand Tracked Natural Interaction in VR](/posts/hand-tracked-natural-interaction-in-vr/) for more info. 
 
 
 CSU Immersive Experience is a virtual reality experience that combines hand-tracking and 3D 360 film to create a unique interactive experience.

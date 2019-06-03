@@ -1,15 +1,11 @@
-<!-- ---
-status: Shipped
-engine: Unity
-platform: Google Cardboard, iOS, Android
-description: Porting a heavyweight desktop HTC Vive application to run at 60fps on resource limited mobile devices.
---- -->
-
-# CSU Immersive Experience Mobile
+# CSU Immersive Experience Mobile Port
+![{"shield"}](https://img.shields.io/badge/Engine-Unity-red.svg)
+![{"shield"}](https://img.shields.io/badge/Platform-Google%20Cardboard,%20iOS,%20Android-blue.svg)
 
 ![{"square-framed"}](/img/project/csu-mobile-space.gif)
 
 TODO
+Porting a heavyweight desktop HTC Vive application to run at 60fps on resource limited mobile devices.
 
 Join us on an immersive journey into the heart of Colorado State University! Narrated by University President Tony Frank, this VR experience invites you to imagine how virtual and augmented reality technology will be used at Colorado State. Learn more about how the Office of the Vice President for Research at CSU is unlocking this new power of perception at https://vpr.colostate.edu/virtualreality/
 

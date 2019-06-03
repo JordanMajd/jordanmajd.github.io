@@ -1,11 +1,6 @@
-<!-- ---
-status: Proof of Concept
-engine: Unity
-platform: Google Daydream
-description: A client proof of concept developed in a single day to demonstrate how interactive video could be used for retail and e-commerce.
---- -->
-
 # Wedding Dresses VR
+![{"shield"}](https://img.shields.io/badge/Engine-Unity-red.svg)
+![{"shield"}](https://img.shields.io/badge/Platform-Google%20Daydream-blue.svg)
 
 ![Photo of a model showing off her wedding dress.{chapter: "square-framed"}](/img/project/weddingdresses.png)
 
