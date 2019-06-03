@@ -4,8 +4,8 @@ SVGS := $(wildcard img/*.svg)
 
 all: html book.pdf book_mobile.pdf book.epub book.mobi
 
-html: $(foreach CHAP,$(CHAPTERS),html/$(CHAP).html) html/js/acorn_codemirror.js \
-      code/skillsharing.zip code/solutions/20_3_a_public_space_on_the_web.zip html/js/chapter_info.js
+html: $(foreach CHAP,$(CHAPTERS),html/$(CHAP).html) html/js/acorn_codemirror.js
+#      code/skillsharing.zip code/solutions/20_3_a_public_space_on_the_web.zip html/js/chapter_info.js
 
 html/%.html: %.md
 	node src/render_html.js $< > $@
@@ -85,3 +85,6 @@ book.mobi: book.epub img/cover.jpg
 serve: html
 	cd html; \
 	python3 -m http.server
+
+clean:
+	rm html/[0-9][0-9]_*.html

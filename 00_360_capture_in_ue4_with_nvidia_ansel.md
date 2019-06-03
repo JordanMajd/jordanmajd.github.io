@@ -1,18 +1,12 @@
-$title=360 Capture in UE4 with NVIDIA Ansel
-$date=01/04/2017
-$type=post
-$image=/inc/img/posts/360/360_infiltrator.jpeg
-$description=Ansel is a toolkit by NVIDIA that enables users to take state of the art in game photographs. It comes with a rich feature set that overcomes the limitations of traditional screen capture methods. Ansel supports 360 and stereo screenshots, making it easy to create content for virtual reality. Super-resolution takes place on the graphics card, allowing users to break free from their 1080p monitors and capture screenshots at insane resolutions (I just took a 2.3 gigapixel screenshot!) Users have full camera control, can apply post processing filters, visual effects and take photos using HDR.
+# 360 Capture In UE4 With Nvidia Ansel
 
-![360 screenshot of UE4’s Infiltrator Demo](/inc/img/posts/360/360_infiltrator.jpeg)
-<span class="subtitle">360 screenshot of UE4’s Infiltrator Demo</span>
+{{figure {url: "img/posts/360/360_infiltrator.jpeg", alt: "360 screenshot of UE4’s Infiltrator Demo", chapter: "framed"}}}
 
 [Ansel][ansel] is a toolkit by NVIDIA that enables users to take state of the art in game photographs. It comes with a rich feature set that overcomes the limitations of traditional screen capture methods. Ansel supports 360 and stereo screenshots, making it easy to create content for virtual reality. Super-resolution takes place on the graphics card, allowing users to break free from their 1080p monitors and capture screenshots at insane resolutions (I just took a 2.3 gigapixel screenshot!) Users have full camera control, can apply post processing filters, visual effects and take photos using HDR.
 
 I’m going to walk you through how to add NVIDIA Ansel to your Unreal project and start taking absolutely stunning VR screenshots.
 
-![360 of SciFi Hallway](/inc/img/posts/360/360_hall.jpeg)
-<span class="subtitle">360 of SciFi Hallway.</span>
+{{figure {url: "img/posts/360/360_hall.jpeg", alt: "360 of SciFi Hallway", chapter: "square-framed"}}}
 
 ## 1. Ensure your computer is set up to use NVIDIA Ansel.
 
@@ -28,8 +22,7 @@ Open up the project you are looking to capture. If you don’t have one ready th
 
 Next we need to enable the the Ansel plugin in your project. To do this click on `Edit -> Plugins`. From there you can navigate to the photography section and click on Ansel and enable it. After activating the plugin Unreal will need to be restarted.
 
-![Enable Ansel in the Editor Plugins menu.](/inc/img/posts/360/360_plugin.png)
-<span class="subtitle">Enable Ansel in the Editor Plugins menu.</span>
+{{figure {url: "img/posts/360/360_plugin.png", alt: "Enable Ansel in the Editor Plugins menu.", chapter: "square-framed"}}}
 
 ## 4. Configure Ansel and white list project.
 
@@ -41,8 +34,7 @@ C:\Program Files\NVIDIA Corporation\Ansel\Tools\NvCameraConfiguration.exe
 
 This will open up the `Ansel Configuration Utility`. You shouldn’t need to change much, just make sure `NvCamera Status` is `Enabled`.
 
-![Set NvCamera Status to enabled in the Ansel Configuration Utility.](/inc/img/posts/360/360_config.png)
-<span class="subtitle">Set NvCamera Status to enabled in the Ansel Configuration Utility.</span>
+{{figure {url: "/img/posts/360/360_config.png", alt: "Set NvCamera Status to enabled in the Ansel Configuration Utility.", chapter: "square-framed"}}}
 
 By default, Ansel is set up to only activate on white-listed games. Since development projects aren’t on the list we’ll run a command to white-list everything.
 
@@ -58,18 +50,15 @@ This allows us to use Ansel in any game which supports it. If you ever want to u
 
 Now that you are all set up, let’s have some fun and take some shots. Go ahead and launch the game in standalone mode by pressing **Play -> Play Standalone Game**.
 
-![Launch the game by pressing Play -> Standalone Game.](/inc/img/posts/360/360_standalone.png)
-<span class="subtitle">Launch the game by pressing Play -> Standalone Game.</span>
+{{figure {url: "/img/posts/360/360_standalone.png", alt: "Launch the game by pressing Play -> Standalone Game.", chapter: "square-framed"}}}
 
 Once the game has launched bring up the in-game Ansel menu by pressing `ALT+F2`. Depending how your computer is set up, things might look a little funky at this point. It just so happens that `F2` is the shortcut to disable real-time lighting in Unreal, so you will want to press `F3` to re-enable real-time lighting. In order to avoid this from happening in the future, you may want to change the keybindings for Ansel using the configuration utility we ran earlier.
 
-![Ansel’s in game GUI.](/inc/img/posts/360/360_settings.png)
-<span class="subtitle">Ansel’s in game GUI.</span>
+{{figure {url: "/img/posts/360/360_settings.png", alt: "Ansel’s in game GUI.", chapter: "square-framed"}}}
 
 Now that Ansel has launched, use WASD and your mouse to move the camera into the desired position, [click here for a list of controls][controls]. Once you have your shot lined up you may select various filters, visual effects and settings for your picture. I suggest to start off with 360 — if you plan viewing with a VR headset give stereo 360 a shot. Once you’ve lined up the perfect pic press the **Snap** button.
 
-![Press snap to take a screenshot.](/inc/img/posts/360/360_snap.png)
-<span class="subtitle">Press snap to take a screenshot.</span>
+{{figure {url: "/img/posts/360/360_snap.png", alt: "Press snap to take a screenshot.", chapter: "square-framed"}}}
 
 Your screenshot will be located in your user’s video folder, for example if your username is `bobbarker` then your image will be at `C:\Users\bobbarker\Videos\UE4Editor`.
 
@@ -77,8 +66,7 @@ Your screenshot will be located in your user’s video folder, for example if yo
 
 Now that you’ve discovered the beauty of Ansel, what’s next?
 
-![Tiny world 360 of Infinity Edge Grasslands.](/inc/img/posts/360/360_tinyplanet.jpeg)
-<span class="subtitle">Tiny world 360 of Infinity Edge Grasslands.</span>
+{{figure {url: "/img/posts/360/360_tinyplanet.jpeg", alt: "Tiny world 360 of Infinity Edge Grasslands.", chapter: "square-framed"}}}
 
 You can view your art in VR, share your shots with friends and family using Facebook’s 360 image viewer, make a Tiny World pic and of course you could always [tweet][tweet] me your favorites.
 
