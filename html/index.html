@@ -22,20 +22,46 @@
 <div id=cover>
 
   <p style="text-align: center; margin: 2em 0">
-    <a href="http://a-fwd.com/com=marijhaver-20&asin-com=1593279507">
-      <img src="img/headshot.svg" alt="Cover image" style="max-width: 30%;">
-    </a>
+    <img src="img/headshot.svg" alt="Cover image" style="max-width: 20%;">
   </p>
 
   <h1>Jordan Majd<div style="font-size: 70%">Software Developer</div></h2>
 
   <p>I have a profound passion to create things.</h>
 
-  <ul class="links">
+  <!-- <ul class="links">
     <li><a href="https://github.com/jordanmajd">CV</a></li>
     <li><a href="https://github.com/jordanmajd">Github</a></li>
     <li><a href="https://twitter.com/jordanmajd">Twitter</a></li>
-  </ul>
+  </ul> -->
+
+  <script src="/js/acorn_codemirror.js"></script>
+  <link rel=stylesheet href="/js/node_modules/codemirror/lib/codemirror.css">
+  <script src="/js/sandbox.js"></script>
+  <script src="/js/chapter_info.js"></script>
+  <script src="/js/code.js"></script>
+
+  <div class="editor-wrap">
+      <textarea id="editor">
+// press run or hit ctrl + enter to run the code
+
+console.log('Hello, there!');
+console.log('To open my resume type cv.open();');
+console.log('Or, if you just need the url...');
+console.log(cv.url);
+console.log(twitter.url);
+console.log(github.url);
+      </textarea>
+      <div class="sandbox-output" id="output"></div>
+  </div>
+  <script>
+
+  </script>
+    <p>
+      <select id="chapters" class=control></select>
+      <select id="per_chapter" class=control></select>
+      <button id="run" class=control>run code</button>
+    </p>
 
 </div>
 
