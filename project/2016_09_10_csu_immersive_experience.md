@@ -4,15 +4,13 @@
 
 ![GIF showing a user interacting in VR using handtracking.{"square-framed"}](/img/article/handtrack/ht_csu.gif)
 
-TODO Write this post
-
 CSU Immersive Experience is a virtual reality experience that combines hand-tracking and 3D 360 film to create a unique interactive experience.
 
-See my blog post [ Hand Tracked Natural Interaction in VR](/posts/hand-tracked-natural-interaction-in-vr/) for more info. 
+See my article [Hand Tracked Natural Interaction in VR](/article/hand-tracked-natural-interaction-in-vr/) to learn more about the UX design process.
 
 
-CSU Immersive Experience is a virtual reality experience that combines hand-tracking and 3D 360 film to create a unique interactive experience.
 
+Stuff:
 - leap motion SDK
 - 4k VR video playback
 - physics based interactions
