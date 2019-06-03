@@ -117,6 +117,18 @@ let renderer = {
     return escape(content);
   },
 
+  hr(token) {
+    return "hr ignored";
+  },
+
+  image(token) {
+    return "image ignored";
+  },
+
+  html_inline(token) {
+    return "html_inline ignored";
+  },
+
   paragraph_open(token) {
     return `\n\n<p${attrs(token)}>${anchor(token)}`;
   },

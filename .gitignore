@@ -11,7 +11,7 @@
 /book_mobile.pdf
 /html/[012]*.html
 /html/article/*.html
-/html/post/*.html
+/html/project/*.html
 /html/js/chapter_info.js
 /html/js/[012]*.js
 /html/js/acorn_codemirror.js
