@@ -12,7 +12,7 @@ ready: true
 
 # Sanofi Holographic
 
-!["Charcoal storyboard of someone using an AR headset to visualize an influenza outbreak." {chapter: "square-framed"}](/img/project/sanofi.jpg)
+![Charcoal storyboard of someone using an AR headset to visualize an influenza outbreak.{"square-framed"}](/img/project/sanofi.jpg)
 
 {{quote {className: "noquote"}
 

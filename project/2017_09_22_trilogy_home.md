@@ -2,7 +2,7 @@
 title: Trilogy Home
 date: 2017-09-22
 layout: project.html
-image: /img/project/trilogyhome.png
+image:
 status: Shipped
 engine: Unreal
 platform: HTC Vive
@@ -11,6 +11,7 @@ description: Showcased at Breckenridge Film Festival, Trilogy Home brought Sketc
 
 # Trilogy Home
 
+![{"square-framed"}](/img/project/trilogyhome.png)
 TODO
 
 - partner with HP

@@ -2,7 +2,7 @@
 title: Blood, Toil, Tears & Sweat
 date: 2017-01-01
 layout: project.html
-image: /img/project/bloodtearsandsweat.png
+image: 
 status: Proof of Concept
 engine: Unity
 platform: Google Cardboard, iOS, Android
@@ -10,6 +10,8 @@ description: Blood, Toil, Tears and Sweat was an experiment in collaboration wit
 --- -->
 
 # Blood, Toil, Tears & Sweat
+
+![{"square-framed"}](/img/project/bloodtearsandsweat.png)
 
 TODO
 

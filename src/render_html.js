@@ -249,13 +249,22 @@ let renderer = {
   },
 
   image(token) {
-    let split = token.children[0].content.split('"');
+    let alt = "";
+    let className;
+    if (token.children && token.children[0] && token.children[0].content) {
+      let split = token.children[0].content.split("{");
+      alt = split[0];
+      if (split.length > 1) {
+        className = split[1].split('"')[1];
+      }
+    }
+
     let newToken = {
       args: [
         {
           url: token.attrGet("src"),
-          alt: split[1],
-          chapter: split[3]
+          className,
+          alt
         }
       ]
     };
@@ -263,10 +272,12 @@ let renderer = {
   },
 
   meta_figure(token) {
-    let { url, alt, chapter } = token.args[0];
-    let className = !chapter
-      ? null
-      : "chapter" + (chapter == "true" ? "" : " " + chapter);
+    let { url, alt, chapter, className } = token.args[0];
+    if (!className) {
+      className = !chapter
+        ? null
+        : "chapter" + (chapter == "true" ? "" : " " + chapter);
+    }
     return `<figure${attrs(token)}${
       className ? ` class="${className}"` : ""
     }><img src="${escape(url)}" alt="${escape(alt)}"${close}></figure>`;

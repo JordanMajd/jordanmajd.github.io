@@ -1,8 +1,4 @@
 <!-- ---
-title: CSU Immersive Experience
-date: 2016-09-10
-layout: project.html
-image: /inc/img/posts/handtrack/ht_csu.gif
 status: Shipped
 engine: Unity
 platform: HTC Vive, Oculus Rift
@@ -11,6 +7,8 @@ alt: <div>See my blog post <a href="/posts/hand-tracked-natural-interaction-in-v
 --- -->
 
 # CSU Immersive Experience
+
+![GIF showing a user interacting in VR using handtracking.{"square-framed"}](/img/article/handtrack/ht_csu.gif)
 
 TODO
 
