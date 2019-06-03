@@ -19,7 +19,9 @@ make
 sudo make install
 
 # install luapress
-luarocks install luapress --local
+git clone git@github.com:JordanMajd/Luapress.git
+cd Luapress
+sudo luarocks make
 
 
 # install sassc

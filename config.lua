@@ -6,14 +6,8 @@
 local config = {
     title = 'jordanmajd.com',
     template = 'jordanmajd',
-    url = 'http://localhost:8000',
-    index_page = 'home',
-    force_index_page = true,
-    envs = {
-      production = {
-        url = 'https://jordanmajd.com'
-      }
-    }
+    url = 'https://jordanmajd.com',
+    build_dir = 'docs'
 }
 
 return config
