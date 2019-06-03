@@ -1,0 +1,47 @@
+{% extends "layout-nav.html" %}
+{% block content %}
+<ul class="post-list">
+  {% for project in collections.projects %}
+  <li class="post">
+    <article>
+      {% if project.image %}
+      <img src="{{ project.image }}" />
+      {% endif %}
+
+      {% if project.ready %}
+      <a class="title" href="/projects/{{ project.title | lower | replace(' ', '-', 'g') | replace(',|&|--|-&', '', 'g') |  url_encode }}">{{ project.title }}</a><span> - {{project.date | date('m/d/Y')}}</span>
+      {% else %}
+      <span class="title">{{ project.title }}</span><span> - {{project.date | date('m/d/Y')}}</span>
+      {% endif %}
+      <div>
+
+      {% if project.status %}
+        <img class="inline" src="https://img.shields.io/badge/Status-{{project.status}}-brightgreen.svg"/>
+      {% endif %}
+
+      {% if project.engine %}
+      <img class="inline" src="https://img.shields.io/badge/Engine-{{project.engine}}-red.svg"/>
+      {% endif %}
+
+      {% if project.platform %}
+      <img class="inline" src="https://img.shields.io/badge/Platform-{{project.platform}}-blue.svg"/>
+      {% endif %}
+
+      </div>
+
+      <p class="body">
+        <span>{{project.description}}</span>
+        {% if project.ready %}
+        <a class="more" href="/projects/{{ project.title | lower | replace(' ', '-', 'g') | replace(',|&|--|-&', '', 'g') |  url_encode }}">Continue Reading...</a>
+        {% elseif project.alt %}
+        {{ project.alt | safe}}
+        {% else %}
+        <div>Detailed write up coming soon.</div>
+        {% endif %}
+      </p>
+      <hr />
+    </article>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

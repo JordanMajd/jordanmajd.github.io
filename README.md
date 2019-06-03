@@ -1,42 +1,41 @@
 # jordanmajd.com
 
+A metalsmith site to share my thoughts and projects.
 
+## About
 
-## Getting Started
+To install:
 
-```
-# install lua
-sudo apt install lua5.1
-sudo apt install luarocks
-
-# install discount
-wget http://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.4.tar.bz2
-tar xjf discount-2.2.4.tar.bz2
-cd discount-2.2.4
-./configure.sh
-vim Makefile # update $CFLAGS from -g to "-g -fPIC"
-make
-sudo make install
-
-# install luapress
-git clone git@github.com:JordanMajd/Luapress.git
-cd Luapress
-sudo luarocks make
-
-
-# install sassc
-sudo apt install sassc
-
-make build
-make serve
-
-# maybe:
-luarocks install etlua --local
+```bash
+npm install
 ```
 
+To build and run development server:
+
+```bash
+npm start
+```
+
+To build for production:
+
+```bash
+npm run build
+```
+
+To configure global variables, modify [src/config.json](/src/config.json).
 
 ## Roadmap
 
-- Multiple post types
-- ensure XML is esacped for RSS (&rsqo;)
-- Other templating languages `etlua`
+- .editorconfig file
+- .eslint
+- .scsslint
+- mathjax
+- gists
+- deploy
+- bower
+- code styling / execution
+- implement unused deps in index.js
+
+## License
+
+This project is licensed under MIT, for further details see [LICENSE](/LICENSE).

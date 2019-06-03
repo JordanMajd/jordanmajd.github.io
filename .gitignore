@@ -1,2 +1,5 @@
-build
-lua_modules
+node_modules
+npm-debug.log
+package-lock.json
+.env
+*.map
