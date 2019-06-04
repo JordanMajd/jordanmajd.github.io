@@ -44,6 +44,6 @@ clean:
 	rm html/project/*.html 2> /dev/null
 	rm html/article/*.html 2> /dev/null
 
-package:
+package: clean html
 	rm -rf docs/; \
 	cp -RL html docs
