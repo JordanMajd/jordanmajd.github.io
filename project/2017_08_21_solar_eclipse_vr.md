@@ -1,4 +1,5 @@
 # Solar Eclipse VR
+![{"shield"}](https://img.shields.io/badge/Status-Purgatory-orange.svg)
 
 ![{"square-framed"}](/img/project/eclipse-tinyplanet.jpg)
 

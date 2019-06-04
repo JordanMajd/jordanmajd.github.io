@@ -41,9 +41,9 @@ serve: html
 	python3 -m http.server
 
 clean:
-	rm html/project/*.html 2> /dev/null
-	rm html/article/*.html 2> /dev/null
+	touch html/project/del.html && rm html/project/*.html
+	touch html/article/del.html && rm html/article/*.html
 
 package: clean html
-	rm -rf docs/; \
+	rm -rf docs
 	cp -RL html docs

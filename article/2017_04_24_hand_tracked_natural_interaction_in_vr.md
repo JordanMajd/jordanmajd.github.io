@@ -1,6 +1,6 @@
 # Hand Tracked Natural Interaction in VR
 
-{{figure {url: "/img/article/handtrack/ht_balloon.png", alt: "Hand tracked VR environment w/ hot air balloons.", chapter: "square-framed"}}}
+![Hand tracked VR environment w/ hot air balloons.{"square-framed"}](/img/article/handtrack/ht_balloon.png)
 
 Virtual reality UX is hard. In the last year, our company has seen several virtual and augmented reality applications from inception to production. Each one has presented us with the same challenge; how to create an intuitive and natural user experience. Thankfully, every app brings us one step closer to answering this question.
 
