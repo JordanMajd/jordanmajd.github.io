@@ -10,13 +10,27 @@
     article { display: flex; margin: 0 2em; flex-wrap: wrap; max-width: none; max-width: calc(38em + 500px); }
     #cover { flex-basis: 480px; max-width: 35em; flex-grow: 1; margin-right: 3em; }
     #contents { flex-basis: 500px; flex-grow: 1; max-width: 35em;  }
-    #links { text-align: center; }
+    #links { text-align: center; width: 100%; font-size: 0.8em; }
     li.contents-intro:before { display: none; }
     .toc h3 { float: right; font-family: inherit; margin: 0; font-weight: normal; font-size: 90%; }
     @media screen and (max-width: 585px) { .toc h3 { display: none }}
     @media screen and (max-width: 500px) { #cover { margin-right: 0 } article { margin: 0 } }
     ul.links, ul.toc { list-style-type: circle; }
     img.logo { vertical-align: text-top; padding: 0px 4px; border: 0; }
+    #mc_embed_signup {
+      font-size: 0.9em;
+    }
+    #mc_embed_signup input {
+      border: 0px none;
+      border-radius: 4px;
+      box-shadow: 2px 2px 2px #ddd;
+      background-color: #eee;
+      font-size: 0.8em;
+      padding: 4px 4px;
+    }
+    mc_embed_signup input.button {
+      text-align: center;
+    }
   </style>
   <!-- Hail Satanalytics! -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59781126-2"></script>
@@ -37,10 +51,20 @@
 
   <h1>Jordan Majd<div style="font-size: 70%">Software Developer</div></h1>
 
-  <p>&lt; <a href="/cv.html">Resume</a> &gt; &lt; <a href="https://github.com/jordanmajd">Github</a> &gt; &lt; <a href="https://twitter.com/jordanmajd">Twitter</a> &gt;</p>
+  <p>&lt; <a href="/cv.html">Resume</a> &gt; &lt; <a href="https://github.com/jordanmajd">Github</a> &gt; &lt; <a href="https://twitter.com/jordanmajd">Twitter</a> &gt; &lt; <a href="https://jordanmajd.com/feed.xml">RSS</a> &gt;</p>
 
   <p>I have a profound passion to create things.</p>
 
+  <div id="mc_embed_signup">
+    <form action="https://jordanmajd.us19.list-manage.com/subscribe/post?u=a05805090d4ebd7c69b2e5c33&amp;id=4adc41f16c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <span>Want to know when I post something new?</span>
+      <div>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="you@yourdomain.com" style="border-radius: 5px;">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+      </div>
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a05805090d4ebd7c69b2e5c33_4adc41f16c" tabindex="-1" value=""></div>
+    </form>
+  </div>
 </header>
 
 <section id="contents">
@@ -79,6 +103,7 @@
       <p>This site is forked from <a href="https://marijnhaverbeke.nl/">Marijn Haverbeke</a>'s book <a href="https://eloquentjavascript.net/">Eloquent Javascript</a> and is licensed under
       a <a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative
       Commons attribution-noncommercial license</a>.</p>
+      <p>2019 &copy; Jordan Majd.</p>
   </div>
 </footer>
 </article>
