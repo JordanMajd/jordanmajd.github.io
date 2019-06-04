@@ -48,5 +48,5 @@ package: clean html
 	git checkout development
 	rm -rf www
 	cp -RL html www
-	git commit -am "Build"
+	git commit -am "Package build"
 	git push origin `git subtree split --prefix www development`:master --force
