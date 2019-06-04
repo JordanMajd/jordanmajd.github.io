@@ -25,6 +25,7 @@
     "promise": "^8.0.1"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "deploy": "git checkout development; git push origin `git subtree split --prefix docs development`:master --force"
   }
 }

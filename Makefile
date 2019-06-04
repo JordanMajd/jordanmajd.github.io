@@ -45,5 +45,7 @@ clean:
 	touch html/article/del.html && rm html/article/*.html
 
 package: clean html
-	rm -rf docs
 	cp -RL html docs
+	git checkout development
+	git push origin `git subtree split --prefix docs development`:master --force
+	rm -rf docs
