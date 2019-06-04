@@ -1,12 +1,12 @@
 # 360 Capture In UE4 With Nvidia Ansel
 
-{{figure {url: "/img/article/360/360_infiltrator.jpeg", alt: "360 screenshot of UE4’s Infiltrator Demo", chapter: "square-framed"}}}
+![360 screenshot of UE4’s Infiltrator Demo{"square-framed"}](/img/article/360/360_infiltrator.jpeg)
 
 [Ansel][ansel] is a toolkit by NVIDIA that enables users to take state of the art in game photographs. It comes with a rich feature set that overcomes the limitations of traditional screen capture methods. Ansel supports 360 and stereo screenshots, making it easy to create content for virtual reality. Super-resolution takes place on the graphics card, allowing users to break free from their 1080p monitors and capture screenshots at insane resolutions (I just took a 2.3 gigapixel screenshot!) Users have full camera control, can apply post processing filters, visual effects and take photos using HDR.
 
 I’m going to walk you through how to add NVIDIA Ansel to your Unreal project and start taking absolutely stunning VR screenshots.
 
-{{figure {url: "/img/article/360/360_hall.jpeg", alt: "360 of SciFi Hallway", chapter: "square-framed"}}}
+![360 of SciFi Hallway{"square-framed"}](/img/article/360/360_hall.jpeg)
 
 ## 1. Ensure your computer is set up to use NVIDIA Ansel.
 
@@ -66,7 +66,7 @@ Your screenshot will be located in your user’s video folder, for example if yo
 
 Now that you’ve discovered the beauty of Ansel, what’s next?
 
-{{figure {url: "/img/article/360/360_tinyplanet.jpeg", alt: "Tiny world 360 of Infinity Edge Grasslands.", chapter: "square-framed"}}}
+![Tiny world 360 of Infinity Edge Grasslands.{ "chapter square-framed" }](/img/article/360/360_tinyplanet.jpeg)
 
 You can view your art in VR, share your shots with friends and family using Facebook’s 360 image viewer, make a Tiny World pic and of course you could always [tweet][tweet] me your favorites.
 
