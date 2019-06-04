@@ -1,20 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><<t $in.title>> :: Jordan Majd</title>
   <link rel=stylesheet href="/css/codemirror.css">
   <link rel=stylesheet href="/css/ejs.css">
-  <script src="/js/acorn_codemirror.js"></script>
-  <script src="/js/sandbox.js"></script>
-  <script src="/js/ejs.js"></script>
-  <<if $in.chap_num || $in.load_files>>
-  <script>
-    <<if $in.chap_num>>var chapNum = <<h $in.chap_num>>;<</if>>
-    <<if $in.load_files>>var sandboxLoadFiles = <<h JSON.stringify($in.load_files)>>;<</if>>
-  </script>
-  <</if>>
   <!-- Hail Satanalytics! -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59781126-2"></script>
   <script>
@@ -42,5 +33,14 @@
   <<if $in.next_link>> <a href="<<t $in.next_link>>.html" title="older article">▶</a><</if>>
 </nav>
 </article>
+<script src="/js/acorn_codemirror.js"></script>
+<script src="/js/sandbox.js"></script>
+<script src="/js/ejs.js"></script>
+<<if $in.chap_num || $in.load_files>>
+<script>
+  <<if $in.chap_num>>var chapNum = <<h $in.chap_num>>;<</if>>
+  <<if $in.load_files>>var sandboxLoadFiles = <<h JSON.stringify($in.load_files)>>;<</if>>
+</script>
+<</if>>
 </body>
 </html>
