@@ -43,3 +43,8 @@ serve: html
 clean:
 	rm html/project/*.html 2> /dev/null
 	rm html/article/*.html 2> /dev/null
+
+package:
+	rm -rf docs/; \
+	cp -RL html docs; \
+	rm docs/js/node_modules
