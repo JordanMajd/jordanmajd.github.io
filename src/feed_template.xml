@@ -13,7 +13,6 @@
                 <link>https://www.jordanmajd.com/<<t post.link >></link>
                 <guid isPermaLink="true">https://www.jordanmajd.com/<<t post.link >></guid>
                 <category><<t post.category >></category>
-                <dc:creator>Jordan Majd</dc:creator>
                 <pubDate><<t post.date>></pubDate>
             </item>
         <</for>>
