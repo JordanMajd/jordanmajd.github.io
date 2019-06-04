@@ -46,5 +46,4 @@ clean:
 
 package:
 	rm -rf docs/; \
-	cp -RL html docs; \
-	rm docs/js/node_modules
+	cp -RL html docs
