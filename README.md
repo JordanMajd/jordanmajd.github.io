@@ -18,6 +18,7 @@ make serve
 This project is forked from [Marijn Haverbeke]'s book [Eloquent Javascript] and is licensed under
 a [Creative Commons attribution-noncommercial license].
 
+Thanks to [Katerina Limpitsouni](https://twitter.com/ninalimpi) for the 404 art.
 
 [Marijn Haverbeke]: https://marijnhaverbeke.nl/
 [Eloquent Javascript]: https://eloquentjavascript.net/
