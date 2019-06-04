@@ -17,10 +17,11 @@ make package
 
 It isn't smart enough to generate a sitemap (yet), so I need to remember to [generate one](www.xml-sitemaps.com)
 
+I like to validate the RSS with [this tool](https://validator.w3.org/feed/#validate_by_uri).
+
 ## Roadmap
 
 - Automatic Sitemap Generation
-- Mailing list?
 
 ## Credits & License
 

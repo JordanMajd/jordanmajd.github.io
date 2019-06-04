@@ -51,7 +51,7 @@ function parsePubDate(dateRaw){
     let day = parseInt(dateRaw.slice(9));
 
     // just set pub time to 9AM local
-    let date = new Date(year, month, day, 9);
+    let date = new Date(year, month, day, 9 - 1);
     let dateTimeString = date.toLocaleDateString("en-US", dateOptions).replace(/,/g, '');
     return `${dateTimeString.slice(0,3)}, ${dateTimeString.slice(8,10)} ${dateTimeString.slice(4,7)} ${dateTimeString.slice(11, -3)}GMT`;
 }
