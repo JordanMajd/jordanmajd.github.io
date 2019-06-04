@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Jordan Majd RSS Feed</title>
+        <link>https://www.jordanmajd.com/</link>
+        <atom:link href="https://www.jordanmajd.com/feed.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        <description>This is my personal website, a place to share my thoughts and show off my portfolio.</description>
+        <copyright>Copyright 2019 Jordan Majd. The contents of this feed are available under a Creative Commons attribution-noncommercial license.</copyright>
+        <<for post $in.posts>>
+            <item>
+                <title><<t post.title >></title>
+                <link>https://www.jordanmajd.com/<<t post.link >></link>
+                <guid isPermaLink="true">https://www.jordanmajd.com/<<t post.link >></guid>
+                <category><<t post.category >></category>
+                <dc:creator>Jordan Majd</dc:creator>
+                <pubDate><<t post.date>></pubDate>
+            </item>
+        <</for>>
+    </channel>
+</rss>

@@ -1,4 +1,4 @@
-# Blood, Toil, Tears & Sweat
+# Blood, Toil, Tears And Sweat
 ![{"shield"}](https://img.shields.io/badge/Engine-Unity-red.svg)
 ![{"shield"}](https://img.shields.io/badge/Platform-Google%20Cardboard,%20iOS,%20Android-blue.svg)
 

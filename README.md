@@ -1,17 +1,26 @@
 # Jordan Majd
 
-This is my personal website. 
-
-
-Feedback welcome, in the form of issues and pull requests.
-
+This is my personal website, a place to share my thoughts and show off my portfolio.
 
 ## Getting Started
 
 ```
-npm install
-make serve
+npm i
+make clean serve
 ```
+
+To package / deploy to my github pages:
+
+```
+make package
+```
+
+It isn't smart enough to generate a sitemap (yet), so I need to remember to [generate one](www.xml-sitemaps.com)
+
+## Roadmap
+
+- Automatic Sitemap Generation
+- Mailing list?
 
 ## Credits & License
 

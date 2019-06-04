@@ -9,6 +9,7 @@
 /pdf/*.log
 /book.pdf
 /book_mobile.pdf
+/html/feed.xml
 /html/[012]*.html
 /html/article/*.html
 /html/project/*.html

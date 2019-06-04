@@ -40,11 +40,14 @@ serve: html
 	cd html; \
 	python3 -m http.server
 
+rss:
+	node src/render_rss.js $(PROJECTS) $(ARTICLES) > html/feed.xml
+
 clean:
 	touch html/project/del.html && rm html/project/*.html
 	touch html/article/del.html && rm html/article/*.html
 
-package: clean html
+package: clean html rss
 	git checkout development
 	rm -rf www
 	cp -RL html www

@@ -357,7 +357,7 @@ let year = parseInt(date.slice(0, 4));
 let month = parseInt(date.slice(5, 7)) - 1;
 let day = parseInt(date.slice(9));
 
-var dateObject = new Date(year, month, day);
+let dateObject = new Date(year, month, day);
 
 metadata.date = dateObject.toLocaleDateString("en-us", dateOptions);
 
