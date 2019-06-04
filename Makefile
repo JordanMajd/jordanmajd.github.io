@@ -45,7 +45,8 @@ clean:
 	touch html/article/del.html && rm html/article/*.html
 
 package: clean html
+	git checkout development
 	rm -rf www
 	cp -RL html www
-	git checkout development
+	git commit -am "Build"
 	git push origin `git subtree split --prefix www development`:master --force

@@ -26,6 +26,6 @@
   },
   "scripts": {
     "test": "make test",
-    "deploy": "git checkout development; git push origin `git subtree split --prefix docs development`:master --force"
+    "deploy": "git checkout development; git push origin `git subtree split --prefix www development`:master --force"
   }
 }
