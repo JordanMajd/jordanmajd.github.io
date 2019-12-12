@@ -40,7 +40,7 @@ The next trick is to force a purple beam so we can guarantee a Ditto to spawn in
 
 Preparation:
 - Go to options, set text speed to slow. This is optional, but very useful when you first start off.
-- Go to options, set save to manual.
+- Go to options, set `Autosave` to `Manual`.
 - Save.
 
 Process:
@@ -81,7 +81,8 @@ If you want to keep it for multiple days rewind your system to 1AM daily to prev
 ## Checking IVs: Solo
 
 Preparation:
-- Go to options, set save to manual.
+- Ensure you have the IV Checker unlocked in the battle tower.
+- Go to options, set `Autosave` to `Manual`.
 - Save.
 
 Process:
