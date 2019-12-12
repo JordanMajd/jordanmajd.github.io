@@ -152,8 +152,18 @@ ol li:before {
   font-size: 90%;
 }
 
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+
 ol li p {
   margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul li p {

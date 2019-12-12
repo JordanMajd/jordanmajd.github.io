@@ -61,7 +61,7 @@ Preparation:
 - Open your Y-Comm by pressing `Y` and switch to local mode by pressing `+` if you aren't already local.
 - Save.
 
-Process:
+<span>Process:
 - Open the Den and select `Invite Others`.
 - Press the `Home` button.
 - Go into `System Settings -> System Date and Time`.
@@ -81,7 +81,7 @@ If you want to keep it for multiple days rewind your system to 1AM daily to prev
 ## Checking IVs: Solo
 
 Preparation:
-- Ensure you have the IV Checker unlocked in the battle tower.
+- Ensure you have the IV Checker unlocked from the Battle Tower.
 - Go to options, set `Autosave` to `Manual`.
 - Save.
 
@@ -89,8 +89,8 @@ Process:
 - Battle the Ditto.
 - Capture it.
 - Check IVs.
-  - If IVs are undesireable, close the game and reload. Then reset by forcing 5 stars again.
-  - If you do like them you can either keep it or reload to host it for others to grind.
+  - If IVs are undesireable, close the game and reload. Then reroll until you get another 5 star Ditto.
+  - If IVs are desireable you can either keep it or reload to host it for others to grind.
 
 ## Checking IVs: Hosting
 
