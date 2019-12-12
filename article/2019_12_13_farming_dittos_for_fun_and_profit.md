@@ -61,7 +61,7 @@ Preparation:
 - Open your Y-Comm by pressing `Y` and switch to local mode by pressing `+` if you aren't already local.
 - Save.
 
-<span>Process:
+Process:
 - Open the Den and select `Invite Others`.
 - Press the `Home` button.
 - Go into `System Settings -> System Date and Time`.
