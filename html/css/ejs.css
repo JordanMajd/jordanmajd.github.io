@@ -156,6 +156,11 @@ ol li p {
   margin: 0;
 }
 
+ul li p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .chap_num {
   font-size: 60%;
   color: #aaa;
@@ -205,6 +210,14 @@ blockquote footer:before {
   content: '—';
   position: absolute;
   left: -1em;
+}
+
+.subtext {
+  font-size: 0.75em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 0;
+  text-align: center;
 }
 
 .editor-wrap {
