@@ -147,8 +147,15 @@ P(6IV) or P(5IV, 0 Speed) or P(5IV, 0 Attack) = 6/6144 + 1/6144 + 1/6144 = 1/768
 
 ## Extras & and Credits
 
-If you notice anything wrong with this, DM me @lordbunson [ IGN . ]#0718 in the /r/SWSH Discord. I'm a pokemon noob, so there's likely several mistakes. If you found this guide helpful feel free to `+ rep` me in the `#bot_spam` channel.
+If you notice anything wrong with this, DM me @lordbunson [ IGN . ]#0718 in the /r/SWSH Discord. I'm a pokemon noob, so there's likely several mistakes. If you found this guide helpful feel free to `+rep` me in the `#bot_spam` channel.
 
 - Thanks to @Calculus#0240 for the probabilities.
 - Thanks to /u/Stan64 for his Guide [How to: Hunt Super-Rare Gigantamax Pokémon from Dens](https://www.reddit.com/r/pokemon/comments/dz2n3d/how_to_hunt_superrare_gigantamax_pok%C3%A9mon_from_dens/).
 - Everyone in [/r/PokeMonSwordAndShield Discord](https://discord.gg/pokemonswordshield) for holding my hand through the process.
+
+## TODO
+
+Below is a running todo:
+
+- Add information regarding loot tables.
+- Discuss differences between 4 and 5 star ditto raids.
