@@ -119,7 +119,7 @@ The best pokeball to use is a Repeat Ball which has a 3.5 catch rate (only if yo
 
 ### What to Look for in a Ditto
 
-4 star and 5 star are equally likely to have max IVs but you might find it is worth it to grind out for the 5*. They have better [loot tables](https://www.serebii.net/swordshield/maxraidbattles/den66.shtml) and are more likely to have Hidden Abilities, more on those below.
+Both 4 star and 5 star are equally likely to have max IVs but you might find it is worth it to grind out for the 5*. They have better [loot tables](https://www.serebii.net/swordshield/maxraidbattles/den66.shtml) and are more likely to have Hidden Abilities, more on those below.
 
 People are usually very happy with a 5 IV (Probability 63/1024) Ditto, but here are some to keep an eye out for:
 
