@@ -8,7 +8,7 @@ This guide will tell you:
 
 - Where to find Ditto's den.
 - How to force a purple beam to spawn Ditto.
-- How to reroll a 5 star Ditto.
+- How to reroll a 4 or 5 star Ditto.
 - How to check IVs.
 - How to host a raid.
 
@@ -49,11 +49,11 @@ Process:
   - If the beam was red, reset by pressing `X` to close the game and reload to repeat the process.
   - If the beam was purple, congrats! Now is a good time to save.
 
-## Reroll 5 Stars
+## Reroll 4 or 5 Stars
 
-![Picture of outlined 5 start ditto{"square-framed"}](/img/article/ditto/ditto_5_star.jpg)
+![Picture of outlined 5 star ditto{"square-framed"}](/img/article/ditto/ditto_5_star.jpg)
 
-Now that we have our purple beam den we are guaranteed to have a 3* or better Ditto inside - but we don't want to settle for 3 stars. Every day, the pokemon in a den will reset. We can game this by changing the time to reset until we get a 5*, which is guaranteed at least 4 perfect IVs. As a side benefit, you'll also end up farming a lot of watts.
+Now that we have our purple beam den we are guaranteed to have a 3* or better Ditto inside - but we don't want to settle for 3 stars. Every day, the pokemon in a den will reset. We can game this by changing the time to reset until we get a 4 or 5* (see section: What to Look for in a Ditto for differences), which are both guaranteed at least 4 perfect IVs. As a side benefit, you'll also end up farming a lot of watts.
 
 Preparation:
 - Go into `System Settings -> System Date and Time`.
@@ -119,6 +119,8 @@ The best pokeball to use is a Repeat Ball which has a 3.5 catch rate (only if yo
 
 ### What to Look for in a Ditto
 
+4 star and 5 star are equally likely to have max IVs but you might find it is worth it to grind out for the 5*. They have better [loot tables](https://www.serebii.net/swordshield/maxraidbattles/den66.shtml) and are more likely to have Hidden Abilities, more on those below.
+
 People are usually very happy with a 5 IV (Probability 63/1024) Ditto, but here are some to keep an eye out for:
 
 - 6 IV (Probability 1/1024).
@@ -135,7 +137,7 @@ After you get your Ditto, be sure to try to trade for a foreign one. As a foreig
 
 How probabilities are computed, thanks to @Calculus#0240.
 
-A 5* Ditto is guaranteed 4 IVs. Of the other 2 IVs, each has 1/32 chance to be 'best'.
+Both 4 and 5 star Ditto are guaranteed 4 'best' IVs. Of the other 2 IVs, each has 1/32 chance to be 'best'.
 
 ```
 P(6IV) = P(both stats best) = 1/32^2 = 1/1024
@@ -152,10 +154,3 @@ If you notice anything wrong with this, DM me @lordbunson [ IGN . ]#0718 in the 
 - Thanks to @Calculus#0240 for the probabilities.
 - Thanks to /u/Stan64 for his Guide [How to: Hunt Super-Rare Gigantamax Pokémon from Dens](https://www.reddit.com/r/pokemon/comments/dz2n3d/how_to_hunt_superrare_gigantamax_pok%C3%A9mon_from_dens/).
 - Everyone in [/r/PokeMonSwordAndShield Discord](https://discord.gg/pokemonswordshield) for holding my hand through the process.
-
-## TODO
-
-Below is a running todo:
-
-- Add information regarding loot tables.
-- Discuss differences between 4 and 5 star ditto raids.
