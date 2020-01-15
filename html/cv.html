@@ -15,8 +15,8 @@
       <section class="contact">
         <img class="contact-portrait" src="/img/headshot.svg" alt="Headshot of Jordan Majd"></img>
         <h2 class="contact-name">Jordan Majd</h2>
-        <h4 class="contact-detail"><a href="tel:redacted">Phone: redacted</a></h4>
-        <h4 class="contact-detail"><a href="mailto:redacted">Email: redacted</a></h4>
+        <h4 class="contact-detail"><a href="tel:redacted">Phone: &lt;redacted&gt;</a></h4>
+        <h4 class="contact-detail"><a href="mailto:redacted">Email: &lt;redacted&gt;</a></h4>
         <h4 class="contact-detail"><a href="https://github.com/jordanmajd">Code: github.com/jordanmajd</a></h4>
       </section>
       <hr class="split">
@@ -43,9 +43,10 @@
           <h3 class="experience-title">Freelance Consultant<span class="experience-detail"> (current)</span></h3>
           <ul class="experience-list">
             <li class="experience-desc">Developed secure firmware for ARM and SAMD51 microcontrollers.</li>
+            <li class="experience-desc">Designed lightweight frontend for Margarita machine with Vue.js.</li>
             <li class="experience-desc">Multithreaded REST / Websocket servers for embedded Raspberry Pi CM3.</li>
           </ul>
-          <span class="tech">Tech: Rust, C, C++, Arduino, i2c, SPI</span>
+          <span class="tech">Tech: Rust, C, C++, Arduino, i2c, SPI, Javascript, Vue.js</span>
         </article>
         <article class="experience">
           <h3 class="experience-title">Apptio<span class="experience-detail"> (2017-2019)</span><span class="experience-detail">- Software Engineer</span></h3>
@@ -60,58 +61,39 @@
           <h3 class="experience-title">Blue Penguin<span class="experience-detail"> (2016 - 2017)</span><span
               class="experience-detail"> - Cofounder, Engineering Lead</span></h3>
           <ul class="experience-list">
-            <li class="experience-desc">Worked with clients to understand their needs and design augmented
-              and virtual reality solutions.
-            </li>
-            <li class="experience-desc">Designed, developed and delivered 5 VR / AR apps to clients for
-              HoloLens,
-              HTC Vive, Oculus, Daydream &amp; Google Cardboard.
-            </li>
-            <li class="experience-desc">Implemented game logic, gesture and voice controls, custom
-              materials and incorporated digital art.
-            </li>
+            <li class="experience-desc">Worked with clients to understand their needs and design AR / VR solutions.</li>
+            <li class="experience-desc">Developed apps for HoloLens, Vive, Oculus, Daydream &amp; Google Cardboard.</li>
+            <li class="experience-desc">Implemented logic, gesture and voice controls, custom materials and incorporated digital art.</li>
           </ul>
           <span class="tech">Tech: C#, C++, Unity, Unreal Engine, iOS, Android</span>
         </article>
         <article class="experience">
-          <h3 class="experience-title">Mad Titan Studios<span class="experience-detail"> (2015 -
-              2017)</span><span class="experience-detail"> - Owner / Software Consultant</span>
+          <h3 class="experience-title">Mad Titan Studios<span class="experience-detail"> (2015 - 2017)</span><span class="experience-detail"> - Owner / Software Consultant</span>
           </h3>
           <ul class="experience-list">
-            <li class="experience-desc">Consulted on apps for CSU, Ion-Zero, Bounce, FenceMapper,
-              Performa.
-            </li>
-            <li class="experience-desc">Utilized TDD to design and engineer Node.js applications and
-              RESTful APIs.
-            </li>
-            <li class="experience-desc">Contracted and managed additional developers to ensure timely
-              delivery.
-            </li>
+            <li class="experience-desc">Consulted on apps for CSU, Ion-Zero, Bounce, FenceMapper, Performa.</li>
+            <li class="experience-desc">Utilized TDD to design and engineer Node.js applications and RESTful APIs.</li>
+            <li class="experience-desc">Contracted and managed additional developers to ensure timely delivery. </li>
           </ul>
-          <span class="tech">Tech: Javascript, Node.js, Angular, PostgreSQL, MongoDB, Docker,
-            AWS</span>
+          <span class="tech">Tech: Javascript, Node.js, Angular, PostgreSQL, MongoDB, Docker, AWS</span>
         </article>
         <article class="experience">
           <h3 class="experience-title">Galvanize<span class="experience-detail"> (2015 - 2016)</span><span
               class="experience-detail"> - Instructor, Sr. Full-Stack Developer</span></h3>
           <ul class="experience-list">
             <li class="experience-desc">Developed curriculum and instructed students.</li>
-            <li class="experience-desc">Built internal tools using Angular and Node.js</li>
-            <li class="experience-desc">Utilized continuous integration to automate grading processes.
-            </li>
+            <li class="experience-desc">Utilized continuous integration to automate grading processes.</li>
             <li class="experience-desc">Partnered with software companies to mentor students.</li>
           </ul>
-          <span class="tech">Tech: Javascript, Node.js, Angular, PostgreSQL, MongoDB, HTML, CSS,
-            Heroku</span>
+          <span class="tech">Tech: Javascript, Node.js, Angular, PostgreSQL, MongoDB, HTML, CSS, Heroku</span>
         </article>
         <article class="experience">
           <h3 class="experience-title">Bounce Software<span class="experience-detail"> (2012 -
               2015)</span><span class="experience-detail"> - Software Developer</span>
           </h3>
           <ul class="experience-list">
-            <li class="experience-desc">Worked alongside clients to form solutions aligned to their needs.
-            </li>
-            <li class="experience-desc">Designed &amp; shipped web, mobile &amp; desktop apps.</li>
+            <li class="experience-desc">Worked alongside clients to form solutions aligned to their needs.</li>
+            <li class="experience-desc">Designed, built &amp; shipped web, mobile &amp; desktop apps.</li>
           </ul>
           <span class="tech">Tech: Java, MySQL, Android, GWT, Phonegap, Linux</span>
         </article>
@@ -119,51 +101,28 @@
       <section class="org">
         <h1 class="section-header">Projects & Contributions</h1>
         <article class="experience">
-          <h3 class="experience-title">Adafruit / Sparkfun SAMD51 Arduino Core<span class="experience-detail"></span></h3>
-          <ul class="experience-list">
-            <li class="experience-desc">Added support for SAMD51 i2c slave by adding handlers for each SERCOM interrupt.</li>
-          </ul>
+          <h3 class="experience-title">Adafruit / Sparkfun SAMD51 Arduino Core<span class="experience-detail"> - Added i2c slave support.</span></h3>
         </article>
         <article class="experience">
-          <h3 class="experience-title">ttykeyboards<span class="experience-detail"></span></h3>
-          <ul class="experience-list">
-            <li class="experience-desc">Implmented keyboard firmware to support HID over USB & BLE.</li>
-          </ul>
+          <h3 class="experience-title">ttykeyboards<span class="experience-detail"> - Implmented firmware to support HID over USB & BLE.</span></h3>
         </article>
         <article class="experience">
-          <h3 class="experience-title">Sphero SDK<span class="experience-detail"></span></h3>
-          <ul class="experience-list">
-            <li class="experience-desc">Reverse engineered Sphero's BLE stack, wrote node library to send commands to robot.</li>
-          </ul>
+          <h3 class="experience-title">Sphero SDK<span class="experience-detail"> - Reversed Sphero's BLE stack; wrote js lib to command robot.</span></h3>
         </article>
-      </section>
-      <section class="org">
-        <h1 class="section-header">Organizations & Awards</h1>
         <article class="experience">
-          <h3 class="experience-title">Code For Fort Collins<span class="experience-detail"> - Brigade
-              Captain</span>
-          </h3>
+          <h3 class="experience-title">Code For Fort Collins<span class="experience-detail"> - Brigade Captain</span></h3>
           <ul class="experience-list">
-            <li class="experience-desc">Organized events, sponsorship and managed project development.
-            </li>
+            <li class="experience-desc">Organized events, sponsorship and managed project development.</li>
             <li class="experience-desc">Maintained repositories for 10+ open source projects.</li>
           </ul>
         </article>
         <article class=experience>
-          <h3 class="experience-title">Pikr Knows<span class="experience-detail"> - Web, iOS, Android</span>
-          </h3>
-          <ul class="experience-list">
-            <li class="experience-desc">1st Place 2015 GoCode Colorado, awarded $25,000 prize by Secretary
-              of State, Wayne Williams.
-            </li>
-          </ul>
+          <h3 class="experience-title">Pikr Knows<span class="experience-detail"> - 1st Place GoCode Colorado, awarded by Secretary of State Wayne Williams.</span></h3>
         </article>
         <article class="experience">
           <h3 class="experience-title">CSU Robotics<span class="experience-detail"> - President</span></h3>
           <ul class="experience-list">
-            <li class="experience-desc">Lead student team to design &amp; prototype smart glasses to
-              assist the visually impaired navigate.
-            </li>
+            <li class="experience-desc">Lead team to prototype assistive smart glasses for the visually impaired.</li>
           </ul>
         </article>
       </section>
