@@ -12,7 +12,7 @@
     "acorn": "^5.7.4",
     "codemirror": "^5.37.0",
     "hjson": "^3.1.0",
-    "jszip": "^2.5.0",
+    "jszip": "^2.7.0",
     "markdown-it": "^8.4.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
