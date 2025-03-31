@@ -52,8 +52,11 @@ body {
 }
 
 .contact-portrait {
-  max-width: 150px;
-  padding-top: 1rem;
+  margin-top: 1rem;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
 }
 
 

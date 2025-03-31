@@ -8,7 +8,9 @@
 A client proof of concept to demonstrate how virtual reality can be used for real-time interactive architectural visualization.
 
 I was responsible for the whole project, but here are some specifics:
-- Implementing gameplay logic in blueprints.
+- Implementing gameplay logic with blueprints.
 - Importing models into UE4 from Sketchup.
-- Creating performant materials
+- Creating performant materials.
 - Reducing draw calls by consolidating materials.
+- Baking lighting.
+

@@ -6,9 +6,9 @@
 
 Showcased at Breckenridge Film Festival, Trilogy Home brought Sketchup to life with Unreal Engine in partnership with HP and Trilogy Partners.
 
-I was responsible for this entire project, here is a list of specifics I worked on:
+I was responsible for this entire client project, here are some of specifics I worked on:
 - Implementing gameplay logic using custom blueprints.
-- Creating performant materials & material instancing.
+- Creating performant materials, instancing matierals to reduce draw calls.
 - Importing Sketchup assets into Unreal and optimizing the meshes.
 - Scene lighting, ensuring the scene looked beautiful while retaining 60fps on target hardware.
 - Performance profiling and optimization.
