@@ -8,60 +8,55 @@
   <link rel=stylesheet href="/css/ejs.css">
   <link rel="alternate" type="application/atom+xml" href="/feed.xml">
   <style>
-    article { display: flex; margin: 0 2em; flex-wrap: wrap; max-width: none; max-width: calc(38em + 500px); }
-    #cover { flex-basis: 480px; max-width: 35em; flex-grow: 1; margin-right: 3em; }
-    #contents { flex-basis: 500px; flex-grow: 1; max-width: 35em;  }
-    #links { text-align: center; width: 100%; font-size: 0.8em; }
+    article {
+      padding-bottom: 1em;
+    }
+    #cover { text-align: center; }
+    #links { text-align: center; width: 100%; font-size: 0.8em; margin-top: 1em; }
     li.contents-intro:before { display: none; }
     .toc h3 { float: right; font-family: inherit; margin: 0; font-weight: normal; font-size: 90%; }
     @media screen and (max-width: 585px) { .toc h3 { display: none }}
-    @media screen and (max-width: 500px) { #cover { margin-right: 0 } article { margin: 0 } }
     ul.links, ul.toc { list-style-type: circle; }
-    img.logo { vertical-align: text-top; padding: 0px 4px; border: 0; }
-    #mc_embed_signup {
-      font-size: 0.9em;
-    }
-    #mc_embed_signup input {
-      border: 0px none;
-      border-radius: 4px;
-      box-shadow: 2px 2px 2px #ddd;
-      background-color: #eee;
-      font-size: 0.8em;
-      padding: 4px 8px;
-    }
-    mc_embed_signup input.button {
-      text-align: center;
+    img.portrait { 
+      margin-top: 1rem;
+      object-fit: cover;
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
     }
   </style>
 </head>
 <body>
 <article>
 <header id="cover">
-
-  <p style="text-align: center; margin: 1em 0">
-    <img src="/img/headshot.svg" alt="Cover image" style="max-width: 20%;">
-  </p>
-
-  <h1>Jordan Majd<div style="font-size: 70%">Software Developer</div></h1>
-
-  <p>&lt; <a href="/cv.html">Resume</a> &gt; &lt; <a href="https://github.com/jordanmajd">Github</a> &gt; &lt; <a href="https://twitter.com/jordanmajd">Twitter</a> &gt;</p>
-
+  <img src="/img/portrait.jpg" alt="Portrait of Jordan" class="portrait">
+  <h1>Jordan Majd<div style="font-size: 70%">Sr. Software Developer</div></h1>
+  <p>&lt; <a href="/cv.html">Resume</a> &gt; &lt; <a href="https://github.com/jordanmajd">Github</a> &gt;</p>
   <p>I have a passion to create things.</p>
   <p>Need a dev? I have upcoming availability.</p>
-
-  <div id="mc_embed_signup">
-    <form action="https://jordanmajd.us19.list-manage.com/subscribe/post?u=a05805090d4ebd7c69b2e5c33&amp;id=4adc41f16c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div>
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="you@yourdomain.com" style="border-radius: 5px;">
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"> 
-        <span style="color:#aaa; font-size: 0.8em;"> ◆ <a href="https://jordanmajd.com/feed.xml">[ RSS ]</a></span>
-      </div>
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a05805090d4ebd7c69b2e5c33_4adc41f16c" tabindex="-1" value=""></div>
-    </form>
-  </div>
 </header>
 
 <section id="contents">
+
+  <h2>Portfolio</h2>
+                
+  <ul class=toc>  
+    <li style="counter-reset: li">
+      <h3>(Latest)</h3>
+      <a href="/project/2017_09_26_sanofi_holographic.html">Sanofi Holographic (HoloLense)</a>
+    </li>
+          <!-- <a href="/project/2019_11_13_vroo_coffee.html">vroo.coffee</a> -->
+    <!-- <li><a href="/project/2019_11_08_tty_keyboards.html">ttykeyboards</a></li> -->
+    <!-- <li><a href="/project/2019_06_02_is_js_enabled.html">Is JS Enabled?</a></li> -->
+    <!-- <li><a href="/project/2017_09_26_sanofi_holographic.html">Sanofi Holographic</a></li> -->
+    <li><a href="/project/2017_09_22_trilogy_home_tour_in_vr.html">Trilogy Home Tour (VR)</a></li>
+    <li><a href="/project/2017_08_21_solar_eclipse_vr.html">Solar Eclipse (VR)</a></li>
+    <li><a href="/project/2017_06_10_trilogy_demo_vr_arch_vis.html">Trilogy Demo (VR)</a></li>
+    <li><a href="/project/2017_03_10_csu_immersive_mobile.html">CSU Immersive Experience (Mobile VR)</a></li>
+    <li><a href="/project/2017_01_01_blood_toil_tears_and_sweat.html">Blood, Toil, Tears And Sweat (Mobile VR)</a></li>
+    <li><a href="/project/2016_11_10_wedding_dresses_vr.html">Wedding Dresses (Mobile VR)</a></li>
+    <li><a href="/project/2016_09_10_csu_immersive_experience.html">CSU Immersive Experience (VR)</a></li>
+  </ul>
 
   <h2>Articles</h2>
 
@@ -72,27 +67,8 @@
     </li>
     <li><a href="/article/2017_05_01_360_capture_in_ue4_with_nvidia_ansel.html">360 Capture in UE4 with Nvidia Ansel</a></li>
     <li><a href="/article/2017_04_24_hand_tracked_natural_interaction_in_vr.html">Hand Tracked Natural Interaction in VR</a></li>
-    <li><a href="/article/2016_01_19_openssh_vulnerability_and_patch.html">OpenSHH Vulnerability and Patch</a></li>
-    <li><a href="/article/2015_12_16_install_and_run_postgres_on_osx.html">Install and Run Postgres on OSX</a></li>
-  </ul>
-
-  <h2>Portfolio</h2>
-                
-  <ul class=toc>  
-    <li style="counter-reset: li">
-      <h3>(Latest)</h3>
-      <a href="/project/2019_11_13_vroo_coffee.html">vroo.coffee</a>
-    </li>
-    <li><a href="/project/2019_11_08_tty_keyboards.html">ttykeyboards</a></li>
-    <li><a href="/project/2019_06_02_is_js_enabled.html">Is JS Enabled?</a></li>
-    <li><a href="/project/2017_09_26_sanofi_holographic.html">Sanofi Holographic</a></li>
-    <li><a href="/project/2017_09_22_trilogy_home_tour_in_vr.html">Trilogy Home Tour in VR</a></li>
-    <li><a href="/project/2017_08_21_solar_eclipse_vr.html">Solar Eclipse VR</a></li>
-    <li><a href="/project/2017_06_10_trilogy_demo_vr_arch_vis.html">Trilogy Demo, VR Arch Vis</a></li>
-    <li><a href="/project/2017_03_10_csu_immersive_mobile.html">CSU Immersive Experience Mobile</a></li>
-    <li><a href="/project/2017_01_01_blood_toil_tears_and_sweat.html">Blood, Toil, Tears And Sweat</a></li>
-    <li><a href="/project/2016_11_10_wedding_dresses_vr.html">Wedding Dresses VR</a></li>
-    <li><a href="/project/2016_09_10_csu_immersive_experience.html">CSU Immersive Experience</a></li>
+    <!-- <li><a href="/article/2016_01_19_openssh_vulnerability_and_patch.html">OpenSHH Vulnerability and Patch</a></li> -->
+    <!-- <li><a href="/article/2015_12_16_install_and_run_postgres_on_osx.html">Install and Run Postgres on OSX</a></li> -->
   </ul>
 </section>
 
@@ -101,7 +77,7 @@
       <p>This site is forked from <a href="https://marijnhaverbeke.nl/">Marijn Haverbeke</a>'s book <a href="https://eloquentjavascript.net/">Eloquent Javascript</a> and is licensed under
       a <a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative
       Commons attribution-noncommercial license</a>.</p>
-      <p>2019 &copy; Jordan Majd.</p>
+      <p>2025 &copy; Jordan Majd.</p>
   </div>
 </footer>
 </article>
